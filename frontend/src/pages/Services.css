@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+}
+#serv{
+    background-color: #011325;
+    height: 410vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#serv-head{
+    color: #CAF7FF;
+    font-size: 7vh;
+    margin-bottom: 5vh;
+}
+#serv-head2{
+    color: #CAF7FF;
+    font-size: 7vh;
+    margin-top: 10vh;
+    margin-top: 25vh;
+}
+#serv-bg{
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    opacity: 0.5;
+}
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    padding: 2rem;
+    justify-items: center; /* center cards in each column */
+  }
+  
+  /* Optional responsive tweak: stack into one column on small screens */
+  @media (max-width: 600px) {
+    .services-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  #mirror-bg{
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    opacity: 0.5;
+    top: 350%;
+  }
+  #lrn{
+    background-color: transparent;
+    border: 2px solid #16bbda;
+    border-radius: 30px;
+    padding: 2vh 3vw;
+    color: white;
+    font-weight: 600;
+    font-size: 2.5vh;
+  }

@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    height: 100%;
+    width: 100%;
+    
+  }
+  
+  .homepg {
+    position: relative; /* Required for absolute children */
+    height: 110vh;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  /* Background video */
+  #homebg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 120vh;
+    width: 100%;
+    object-fit: cover;
+    z-index: -2; /* Lowest layer */
+  }
+  
+  /* Dark overlay on top of the video */
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1));
+    z-index: -1; /* Above video, below content */
+  }
+  
+  /* Main content wrapper */
+  #main {
+    position: relative;
+    z-index: 2; /* Top layer */
+    height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 9vh;
+  }
+  
+  /* Heading style */
+  #main-head {
+    color: white;
+    font-size: 7vh;
+    text-align: center;
+    line-height: 2vh;
+  }
+  
+  /* Container for top line (with image and part of heading) */
+  #cont1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5vw;
+  }
+  
+  /* Blue tag word */
+  #tag {
+    color: #16bbda;
+  }
+  
+  /* SVG image positioning */
+  #rectimg {
+    margin-bottom: 40px;
+    margin-right: 15px;
+  }
+  #bx{
+    height: 22vh;
+    margin-top: 4vh;
+  }
+  #subhead{
+    color: white;
+    font-weight: 500;
+  }
+  #btn2{
+    color: white;
+    background-color: #16bbda;
+    border-radius: 30px;
+    padding: 1.8vh 2vw;
+    border: none;
+    font-weight: 400;
+    font-size: 2.5vh;
+    margin-top: 2vh;
+  }
+  #scr{
+    margin-top: 3vh;
+  }
+
+
+
+  
