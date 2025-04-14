@@ -51,7 +51,7 @@ const Services = () => {
         Built on trust, transparency, and value, we empower you to make confident business decisions—every step of the way.
     </BigCard>
 
-    <button id='lrn'>Learn More</button>
+    <button className='lrn'>Learn More</button>
         </div>
 
     </>

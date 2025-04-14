@@ -100,7 +100,11 @@
   #scr{
     margin-top: 3vh;
   }
-
+  #btn2:hover{
+    background-color: #ffff;
+    color: #011325;
+    font-weight: 700;
+  }
 
 
   

@@ -1,0 +1,48 @@
+.testcard {
+    min-width: 20vw;
+    max-width: 22vw;
+    height: 60vh;
+    margin: 1rem;
+    padding: 2rem 1.5rem;
+    border-radius: 1rem;
+    background: linear-gradient(
+      to bottom,
+      rgba(0, 183, 255, 0.35),
+      rgba(0, 183, 255, 0.15),
+      rgba(0, 183, 255, 0.05),
+      rgba(0, 183, 255, 0)
+    );
+    border: 2px solid white;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    backdrop-filter: blur(1px);
+    box-shadow: 0 0 10px rgba(0, 183, 255, 0.2);
+  }
+  
+  
+  .quote-icon {
+    width: 3rem;
+    height: 3rem;
+    align-self: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .testimonial-text {
+    font-size: 1rem;
+    line-height: 1.6;
+    flex-grow: 1;
+    text-align: center;
+  }
+  
+  .testimonial-name {
+    font-weight: bold;
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 1.5rem;
+  }
+  .testcard:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+  }

@@ -23,11 +23,29 @@ html , body{
 #hmlogo{
     height: 13vh;
 }
-.hm-btn{
+.hm-btn {
+    display: flex; /* make it a block-level flex container */
+    align-items: center;
+    justify-content: center;
+    height: 42px; /* ensures a consistent height */
+    padding: 0 20px;
     background-color: transparent;
     border: 2px solid #16bbda;
     border-radius: 30px;
-    padding: 6px 16px;
     color: #16bbda;
     font-weight: 600;
-}
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    z-index: 10; /* ensures it stays above other elements */
+  }
+  
+  .hm-btn:hover {
+    color: #ffffff;
+    background-color: #16bbda22; /* optional subtle bg for feedback */
+    transform: scale(1.05);
+    border-color: #ffffff;
+  }
+  
+  
+    

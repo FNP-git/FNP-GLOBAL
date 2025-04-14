@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+}
+#global-head{
+    color: #CAF7FF;
+    background-color: #011325;
+    text-align: center;
+    font-size: 7vh;
+}
+#global-main{
+    background-color: #011325;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#map{
+    max-width: 70%;
+    margin-top: 8vh;
+    z-index: 5;
+}
+#map:hover{
+    transform: scale(1.05);
+    transition: all 0.7s ease-out;
+}

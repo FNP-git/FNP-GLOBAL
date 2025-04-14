@@ -1,0 +1,60 @@
+.clients-container {
+    width: 100%;
+    height: 110vh;
+    background: #011325;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .slider-window {
+    width: 90vw;
+    overflow: hidden;
+    z-index: 5;
+  }
+  
+  .cards-wrapper {
+    display: flex;
+  }
+  
+  .cards-wrapper.animate {
+    transition: transform 0.6s ease-in-out;
+  }
+  
+  .arrow-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 3rem;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 10;
+    user-select: none;
+  }
+  
+  .arrow-button.left {
+    left: 1rem;
+  }
+  
+  .arrow-button.right {
+    right: 1rem;
+  }
+  #client-head{
+    color: #CAF7FF;
+    background-color: #011325;
+    text-align: center;
+    font-size: 7vh;
+    z-index: 10;
+  }
+  #tstbg{
+    width: 100%;
+    opacity: 0.5;
+    z-index: 1;
+    position: absolute;
+    z-index: 2;
+    object-fit: contain;
+  }

@@ -8,7 +8,10 @@ import arrow from '../assets/scroll.svg'
 import Welcome from './Welcome'
 import Seperator from '../components/Seperator'
 import Services from './Services'
-
+import Clients from './Clients'
+import Global from './Global'
+import Footer from '../components/Footer'
+import Blog from '../components/Blogs'
 
 const Home = () => {
   return (
@@ -44,7 +47,10 @@ const Home = () => {
             <Welcome />
             <Seperator />
             <Services />
-
+            <Clients />
+            <Global />  
+            <Blog />
+            <Footer />
     </>
   )
 }

@@ -1,0 +1,139 @@
+.blogs-section {
+    background-color: #011325;
+    padding: 6vh 4vw;
+    text-align: center;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .blogs-heading {
+    color: #CAF7FF;
+    font-size: 7vh;
+    margin-bottom: 2rem;
+    background-color: #011325;
+    padding: 1rem;
+    position: relative;
+  }
+  
+  .blogs-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 4vh;
+  }
+  
+  .slider-window {
+    width: 90vw;
+    overflow-x: hidden;
+    overflow-y: visible;
+    z-index: 5;
+  }
+  
+  .blogs-wrapper {
+    display: flex;
+    width: 100%;
+    overflow: visible;
+  }
+  
+  .blogs-wrapper.animate {
+    transition: transform 0.6s ease-in-out;
+  }
+  
+  .blog-card-container {
+    flex: 0 0 auto;
+    margin-right: 2vh;
+    overflow: visible;
+    position: relative;
+  }
+  
+  .blog-card-container:last-child {
+    margin-right: 0;
+  }
+  
+  .blog-card {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .arw-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #16bbda;
+    border: 2px solid #16bbda;
+    border-radius: 50%;
+    padding: 0.6rem;
+    color: #011325;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    transition: all 0.3s ease;
+  }
+  
+  .arw-button:hover {
+    transform: translateY(-50%) scale(1.1);
+  }
+  
+  .arw-button svg {
+    height: 1.8rem;
+    width: 1.8rem;
+    transition: all 0.3s ease;
+  }
+  
+  .arw-button.left {
+    left: 1rem;
+  }
+  
+  .arw-button.right {
+    right: 1rem;
+  }
+  
+  .show-more {
+    font-size: 1.1rem;
+    padding: 0.8rem 2rem;
+    background-color: transparent;
+    color: white;
+    border: 2px solid #16bbda;
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    z-index: 10;
+  }
+  
+  .show-more:hover {
+    background-color: #16bbda;
+    color: #011325;
+    font-weight: 600;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .blogs-heading {
+      font-size: 5vh;
+    }
+    
+    .blog-card-container {
+      flex: 0 0 calc(100% - 2vh);
+      margin-right: 2vh;
+    }
+    
+    .blogs-wrapper {
+      transform: translateX(-${index * 100}%) !important;
+    }
+    
+    .arw-button {
+      padding: 0.4rem;
+    }
+    
+    .arw-button svg {
+      height: 1.2rem;
+      width: 1.2rem;
+    }
+  }

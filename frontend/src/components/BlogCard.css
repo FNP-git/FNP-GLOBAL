@@ -1,0 +1,49 @@
+.blog-card {
+    width: 28vw;
+    background-color: #ffffff;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .blog-image {
+    transition: transform 0.4s ease; /* Makes scaling smooth */
+  }
+  
+  .blog-card:hover .blog-image {
+    transform: scale(1.2); /* Apply transform, not scale directly */
+  }
+  
+  .blog-image {
+    width: 100%;
+    height: 26vh;
+    object-fit: cover;
+  }
+  
+  .blog-content {
+    padding: 1.2rem;
+    text-align: center;
+  }
+  
+  .blog-content h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #000;
+  }
+  
+  .read-more-btn {
+    padding: 0.5rem 1.5rem;
+    background-color: #011325;
+    color: #ffffff;
+    border: none;
+    border-radius: 0.7rem;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .read-more-btn:hover {
+    background-color: #00b7ff;
+  }
