@@ -1,0 +1,46 @@
+.team-card {
+    width: 16vw;
+    padding: 2rem 1.5rem;
+    background: transparent;
+    border: 0.15rem solid #19d3ff;
+    border-radius: 2rem;
+    text-align: center;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.2);
+    margin: 2vh auto;
+    z-index: 5;
+  }
+  .team-card:hover{
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .team-img-wrapper {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 1.5rem;
+  }
+  
+  .team-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .team-name {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+  
+  .team-position {
+    font-size: 1rem;
+    opacity: 0.85;
+    color: #ffffff;
+  }
+  

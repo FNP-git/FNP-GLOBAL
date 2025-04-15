@@ -12,6 +12,8 @@ import Clients from './Clients'
 import Global from './Global'
 import Footer from '../components/Footer'
 import Blog from '../components/Blogs'
+import About from './About'
+import BlogPage from './BlogPage'
 
 const Home = () => {
   return (

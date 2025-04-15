@@ -1,0 +1,17 @@
+/* src/components/BlogContainer.css */
+
+.blog-container {
+    padding: 4rem 2rem;
+    background-color: #011325;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .trend-heading {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 2.5rem;
+    color: #00BFFF;
+  }
+  

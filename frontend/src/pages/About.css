@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+    color: #C9F7FF;
+}
+.abt{
+    background-color: #011325;
+    height: 500vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.abt-head{
+    color: #C9F7FF;
+    font-size: 4vh;
+}
+.abt-subhead{
+    color: #22D3EE;
+    font-size: 1.5vh;
+    margin-top: 3vh;
+
+}
+#abt-para{
+    max-width: 50vw;
+    text-align: center;
+    margin-top: 5vh;
+}
+#abtbg{
+    position: absolute;
+    max-width: 100%;
+}
+#abtlgo{
+    height: 20vh;
+    margin-top: 5vh;
+}
+.str-head{
+    color: #C9F7FF;
+    font-size: 8vh;
+    margin-top: 10vh;
+}
+#directors1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+#directors2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.story{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#stbg{
+    position: absolute;
+    width: 100%;
+    object-fit: cover;
+    opacity: 0.5;
+    margin-top: 140vh;
+    z-index: 1;
+}
+#st-para{
+    max-width: 70vw;
+    text-align: center;
+    margin-top: 5vh;
+    color: #C9F7FF;
+}
+#tm-head{
+    color: #22D3EE;
+    font-size: 8vh;
+    margin-top: 10vh;
+}
+#tm-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5rem;
+}
+.team{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

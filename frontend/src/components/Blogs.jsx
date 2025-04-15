@@ -17,25 +17,22 @@ const blogData = [
   { image: img1, title: 'Top 10 Startup Marketing Mistakes' },
 ];
 
-const Blogs = () => {
+const Blogs = ({ showButton = true }) => {
   const totalCards = blogData.length;
   const [index, setIndex] = useState(0);
   const wrapperRef = useRef(null);
   const [isAnimating, setIsAnimating] = useState(true);
 
-  // Create duplicated array for seamless looping
   const extendedBlogs = [
-    ...blogData.slice(-3), // last three at start
+    ...blogData.slice(-3),
     ...blogData,
-    ...blogData.slice(0, 3), // first three at end
+    ...blogData.slice(0, 3),
   ];
 
   const handleNext = () => {
     if (index >= totalCards) {
-      // If at end, reset to beginning without animation
       setIsAnimating(false);
       setIndex(0);
-      // After reset, enable animations again
       setTimeout(() => setIsAnimating(true), 50);
     } else {
       setIsAnimating(true);
@@ -45,10 +42,8 @@ const Blogs = () => {
 
   const handlePrev = () => {
     if (index <= 0) {
-      // If at beginning, jump to end without animation
       setIsAnimating(false);
       setIndex(totalCards);
-      // After reset, enable animations again
       setTimeout(() => setIsAnimating(true), 50);
     } else {
       setIsAnimating(true);
@@ -56,27 +51,26 @@ const Blogs = () => {
     }
   };
 
-  // Calculate the card width with margin included
-  const cardWidth = `calc((100% - 4vh) / 3)`; // 3 cards with 2vh margin between them
+  const cardWidth = `calc((100% - 4vh) / 3)`;
 
   return (
     <div className="blogs-section">
       <h1 className="blogs-heading">OUR LATEST BLOGS</h1>
       <div className="blogs-container">
-            <button className="arw-button left" onClick={handlePrev}>
-        <ChevronLeft />
+        <button className="arw-button left" onClick={handlePrev}>
+          <ChevronLeft />
         </button>
         <div className="slider-window">
           <div
             ref={wrapperRef}
             className={`blogs-wrapper ${isAnimating ? 'animate' : ''}`}
             style={{
-              transform: `translateX(-${index * (100 / 3)}%)`, // Move by one card (33.33%)
+              transform: `translateX(-${index * (100 / 3)}%)`,
             }}
           >
             {extendedBlogs.map((blog, i) => (
-              <div 
-                key={i} 
+              <div
+                key={i}
                 className="blog-card-container"
                 style={{ width: cardWidth }}
               >
@@ -85,11 +79,12 @@ const Blogs = () => {
             ))}
           </div>
         </div>
-                <button className="arw-button right" onClick={handleNext}>
-        <ChevronRight />
+        <button className="arw-button right" onClick={handleNext}>
+          <ChevronRight />
         </button>
       </div>
-      <button className="show-more">Show More</button>
+
+      {showButton && <button className="show-more">Show More</button>}
     </div>
   );
 };

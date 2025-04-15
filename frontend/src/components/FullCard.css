@@ -1,0 +1,79 @@
+/* src/components/FullCard.css */
+
+.fullcard {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    background-color: white;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+    width: 100%;
+    padding: 1rem;
+    gap: 1.5rem;
+  }
+  
+  .fullcard-img {
+    width: 280px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+    flex-shrink: 0;
+  }
+  
+  .fullcard-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+  }
+  
+  .fullcard-title {
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
+  
+  .fullcard-text {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 1.25rem;
+    line-height: 1.5;
+  }
+  
+  .fullcard-btn {
+    background-color: #001F3F;
+    color: white;
+    padding: 0.75rem 2rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-self: flex-start;
+  }
+  
+  .fullcard-btn:hover {
+    background-color: #003366;
+  }
+  
+  /* Responsive stacking for smaller screens */
+  @media (max-width: 768px) {
+    .fullcard {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .fullcard-img {
+      width: 100%;
+      height: auto;
+    }
+  
+    .fullcard-btn {
+      align-self: center;
+    }
+  }
+  
