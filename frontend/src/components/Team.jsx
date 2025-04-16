@@ -1,7 +1,7 @@
 import React from 'react';
 import './Team.css';
 
-const Team = ({ image, name, position }) => {
+const Team = ({ image, name, position, dep }) => {
   return (
     <div className="team-card">
       <div className="team-img-wrapper">
@@ -9,6 +9,8 @@ const Team = ({ image, name, position }) => {
       </div>
       <h2 className="team-name">{name}</h2>
       <p className="team-position">{position}</p>
+      <p className="dep">{dep}</p>
+
     </div>
   );
 };

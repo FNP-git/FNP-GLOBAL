@@ -43,4 +43,50 @@
     opacity: 0.85;
     color: #ffffff;
   }
+  .dep{
+    font-size: 0.8rem;
+    opacity: 0.85;
+    color: #ffffff;
+  }
   
+  @media screen and (max-width: 600px) {
+    .team-card {
+      width: 80vw;
+      padding: 1.5rem 1rem;
+      border-radius: 1.5rem;
+      margin: 1.5rem auto;
+    }
+  
+    .team-img-wrapper {
+      width: 4rem;
+      height: 4rem;
+      margin-bottom: 1rem;
+    }
+  
+    .team-name {
+      font-size: 1rem;
+    }
+  
+    .team-position {
+      font-size: 0.9rem;
+    }
+  }
+  @media screen and (max-width: 768px){
+    .team-card {
+      width: 25vw;
+      padding: 2rem 1.5rem;
+      border-radius: 1.5rem;
+      margin: 1rem auto;
+    }
+    .team-name{
+      font-size: 0.8rem;
+    }
+    .team-position{
+      font-size: 0.7rem;
+    }
+  }
+  @media screen and (max-width: 426px){
+    .team-card {
+      width: 55vw;
+    }
+  }

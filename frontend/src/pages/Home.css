@@ -82,6 +82,11 @@
   #bx{
     height: 22vh;
     margin-top: 4vh;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+  }
+  #bx:hover{
+    transform: rotateY(180deg);
   }
   #subhead{
     color: white;

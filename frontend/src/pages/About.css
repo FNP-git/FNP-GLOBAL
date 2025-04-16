@@ -48,14 +48,14 @@ html , body{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     gap: 2rem;
 }
 #directors2{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     gap: 2rem;
 }
 .story{
@@ -96,3 +96,141 @@ html , body{
     justify-content: center;
     align-items: center;
 }
+#tm1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+/* Existing styles above remain unchanged */
+
+/* Tablet screens (1024px and below) */
+@media screen and (max-width: 1024px) {
+    .abt{
+        height: 610vh;
+    }
+    .abt-head {
+      font-size: 3.2vh;
+      text-align: center;
+    }
+  
+    .abt-subhead {
+      font-size: 1.3vh;
+      text-align: center;
+      padding: 0 2vw;
+    }
+  
+    #abt-para {
+      max-width: 80vw;
+      font-size: 0.95rem;
+      padding: 0 2vw;
+    }
+  
+    .str-head {
+      font-size: 6vh;
+      text-align: center;
+    }
+  
+    #st-para {
+      max-width: 85vw;
+      font-size: 0.95rem;
+      padding: 0 2vw;
+    }
+  
+    #tm-head {
+      font-size: 6vh;
+      text-align: center;
+    }
+  
+    #tm-list {
+      gap: 3rem;
+      padding: 0 2vw;
+    }
+  
+    #directors1,
+    #directors2 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 2rem;
+    }
+  
+    #stbg {
+      margin-top: 160vh; /* Adjusted for different viewport height */
+    }
+  }
+  
+  /* Mobile screens (768px and below) */
+  @media screen and (max-width: 768px) {
+    .abt {
+      height: auto;
+      padding: 5vh 0;
+    }
+  
+    .abt-head {
+      font-size: 2.8vh;
+      text-align: center;
+    }
+  
+    .abt-subhead {
+      font-size: 1.2vh;
+      margin-top: 2vh;
+      text-align: center;
+    }
+  
+    #abtlgo {
+      height: 15vh;
+      margin-top: 4vh;
+    }
+  
+    #abt-para {
+      max-width: 90vw;
+      font-size: 0.9rem;
+      padding: 0 1rem;
+    }
+  
+    .str-head {
+      font-size: 5vh;
+      margin-top: 8vh;
+    }
+  
+    #st-para {
+      font-size: 0.9rem;
+      max-width: 90vw;
+      padding: 0 1rem;
+    }
+  
+    #tm-head {
+      font-size: 5vh;
+      margin-top: 8vh;
+    }
+  
+    #tm-list {
+      flex-direction: column;
+      gap: 2rem;
+    }
+  
+    #directors1,
+    #directors2 {
+      flex-direction: row;
+      gap: 2rem;
+    }
+  
+    #stbg {
+      margin-top: 200vh;
+    }
+  }
+  
+  @media screen and (max-width: 426px) {
+    #directors1,
+    #directors2 {
+      flex-direction: column;
+      align-items: center;
+      gap: 0rem;
+    }
+    #tm1, #tm2{
+        flex-direction: column;
+        gap: 0rem;
+    }
+  }
+  

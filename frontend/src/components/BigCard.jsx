@@ -10,7 +10,7 @@ const BigCard = ({ number, title, children }) => {
       <div className="big-card__content">
         <h2 className="big-card__title">{title}</h2>
         <p className="big-card__text">{children}</p>
-      </div>
+      </div> 
     </div>
   );
 };

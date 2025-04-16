@@ -43,7 +43,7 @@ const About = () => {
                     <DirCard
                   image={anshul}
                   name="Frank Parshu"
-                  position="Managing Director"
+                  position="Founder & CEO"
                 />
                 <DirCard
                   image={anshul}
@@ -59,12 +59,12 @@ const About = () => {
               <div id="directors2">
                     <DirCard
                   image={anshul}
-                  name="Lizi"
+                  name="Elizabeth Mary"
                   position="Additional Director"
                 />
                 <DirCard
                   image={anshul}
-                  name="Praxxi"
+                  name="Pratiksha"
                   position="Additional Director"
                 />
               </div>
@@ -76,24 +76,32 @@ At FNP Global Business Consultancy, your success is our mission. Let’s build t
             <div className="team">
               <h1 id='tm-head'>MEET THE TEAM</h1>
               <div id="tm-list">
-                <Team 
-                image={anshul}
-                name="ANSHUL GUPTA"
-                position="Team Lead Sales"
-              /><Team 
+                <div id='tm1'>
+                  <Team 
                 image={anshul}
                 name="FREDDY PARSHU"
-                position="Sales Manager"
+                position="Manager"
+                dep="(Sales)"
               />
+              <Team 
+                image={anshul}
+                name="ANSHUL GUPTA"
+                position="Team Lead"
+                dep="(Sales)"
+              /></div>
+              <div id='tm1'>
                 <Team 
                 image={anshul}
                 name="PRANJAL PUJARI"
-                position="Team Lead Backend"
+                position="Team Lead"
+                dep="(Backend)"
               /><Team 
                 image={anshul}
                 name="STANLEY VICTOR"
-                position="VP Marketing"
+                position="Vice-President"
+                dep="(Marketing)"
               />
+              </div>
               </div>
             </div>
             <WhoCard

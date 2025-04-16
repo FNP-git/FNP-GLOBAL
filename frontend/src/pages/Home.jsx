@@ -14,6 +14,7 @@ import Footer from '../components/Footer'
 import Blog from '../components/Blogs'
 import About from './About'
 import BlogPage from './BlogPage'
+import Contact from './Contact'
 
 const Home = () => {
   return (

@@ -34,62 +34,60 @@ const Footer = () => {
           </ul>
         </div>
 
-        <div className="footer-section contact">
-  <div className="contact-block">
-    <h3><FaPhoneAlt /> Contact Number</h3>
-    <a href="tel:+18888079696">+1-888-807-9696</a>
-  </div>
+        <div className="footer-section footer-contact-section">
+          <div className="contact-block">
+            <h3><FaPhoneAlt /> Contact Number</h3>
+            <a href="tel:+18888079696">+1-888-807-9696</a>
+          </div>
 
-  <div className="contact-block">
-    <h3><FaEnvelope /> Email</h3>
-    <a href="mailto:info@fnpglobal.com">info@fnpglobal.com</a>
-  </div>
+          <div className="contact-block">
+            <h3><FaEnvelope /> Email</h3>
+            <a href="mailto:info@fnpglobal.com">info@fnpglobal.com</a>
+          </div>
 
-  <div className="contact-block">
-    <h4>Social Media :</h4>
-    <div className="social-icons">
-      <a href="#" target="_blank" rel="noopener noreferrer"><FaFacebookF /></a>
-      <a href="#" target="_blank" rel="noopener noreferrer"><FaLinkedinIn /></a>
-      <a href="#" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
-    </div>
-  </div>
-</div>
-
+          <div className="contact-block">
+            <h4>Social Media :</h4>
+            <div className="social-icons">
+              <a href="#" target="_blank" rel="noopener noreferrer"><FaFacebookF /></a>
+              <a href="#" target="_blank" rel="noopener noreferrer"><FaLinkedinIn /></a>
+              <a href="#" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
+            </div>
+          </div>
+        </div>
 
         <div className="footer-section headquarters">
           <h3><FaMapMarkerAlt /> Headquarters</h3>
           <div className="address-line">
-                <div className="flag-label">
-                    <img src={usa} alt="usa" />
-                    <span>USA Address</span>
-                </div>
-                <p>287 Grove St Worcester, MA 01605</p>
-                </div>
+            <div className="flag-label">
+              <img src={usa} alt="usa" />
+              <span>USA Address</span>
+            </div>
+            <p>287 Grove St Worcester, MA 01605</p>
+          </div>
 
-                <div className="address-line">
-                <div className="flag-label">
-                    <img src={canada} alt="canada" />
-                    <span>Canada Address</span>
-                </div>
-                <p>287 Grove St Worcester, MA 01605</p>
-                </div>
+          <div className="address-line">
+            <div className="flag-label">
+              <img src={canada} alt="canada" />
+              <span>Canada Address</span>
+            </div>
+            <p>287 Grove St Worcester, MA 01605</p>
+          </div>
 
-                <div className="address-line">
-                <div className="flag-label">
-                    <img src={india} alt="india" />
-                    <span>India Registered Address</span>
-                </div>
-                <p>7/160, Bans Mandi, Bansmandi, Sarai Babu, Aligarh, Uttar Pradesh 202001</p>
-                </div>
+          <div className="address-line">
+            <div className="flag-label">
+              <img src={india} alt="india" />
+              <span>India Registered Address</span>
+            </div>
+            <p>7/160, Bans Mandi, Bansmandi, Sarai Babu, Aligarh, Uttar Pradesh 202001</p>
+          </div>
 
-                <div className="address-line">
-                <div className="flag-label">
-                    <img src={india} alt="india" />
-                    <span>India’s Corporate Office</span>
-                </div>
-                <p>3rd Floor, Skymark Building, F-01, F Block, Sector 6, Noida, Uttar Pradesh 201301</p>
-                </div>
-
+          <div className="address-line">
+            <div className="flag-label">
+              <img src={india} alt="india" />
+              <span>India’s Corporate Office</span>
+            </div>
+            <p>3rd Floor, Skymark Building, F-01, F Block, Sector 6, Noida, Uttar Pradesh 201301</p>
+          </div>
         </div>
       </div>
     </footer>

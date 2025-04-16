@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    height: 100%;
+    width: 100%;
+    color: #C9F7FF;
+  }
+  
+  .contact {
+    background-color: #011325;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10vh;
+  }
+  
+  #contact-bg {
+    position: absolute;
+    max-width: 100%;
+  }
+  
+  .contact-head {
+    color: #C9F7FF;
+    font-size: 4vh;
+    text-align: center;
+  }
+  
+  .contact-subhead {
+    color: #22D3EE;
+    font-size: 1.5vh;
+    margin-top: 3vh;
+    text-align: center;
+  }
+  
+  #contact-logo {
+    height: 20vh;
+    margin-top: 5vh;
+  }
+  
+  .contact-content {
+    max-width: 60vw;
+    text-align: center;
+    margin-top: 5vh;
+  }
+  
+  #contact-para {
+    font-size: 1rem;
+    color: #C9F7FF;
+    line-height: 1.6;
+  }
+  

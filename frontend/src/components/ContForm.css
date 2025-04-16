@@ -1,0 +1,124 @@
+/* ContForm.css */
+
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #e6f7fb;
+    color: #000;
+    padding: 4vh 4vw;
+    border-radius: 2rem;
+    max-width: 75vw;
+    margin: 4vh auto;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-left, .contact-right {
+    flex: 1 1 45%;
+    min-width: 280px;
+    margin: 1rem 0;
+  }
+  
+  .contact-heading {
+    font-size: 2.8rem;
+    font-weight: 800;
+    margin-bottom: 2vh;
+    color: #000;
+  }
+  
+  .contact-text {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 2vh;
+  }
+  
+  .contact-info {
+    font-size: 1.1rem;
+    margin: 1vh 0;
+    color: #000;
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 1vh;
+    font-size: 1.8rem;
+    color: #000;
+  }
+  
+  .icon {
+    cursor: pointer;
+    transition: transform 0.3s;
+    color: #000;
+  }
+  
+  .icon:hover {
+    transform: scale(1.1);
+    color: #16bbda;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5vh;
+    padding: 2vw;
+
+  }
+  
+  .form-row {
+    display: flex;
+    gap: 1rem;
+    
+  }
+  
+  .input, .textarea {
+    padding: 0.6rem;
+    border: 1px solid black;
+    border-radius: 0.6rem;
+    font-size: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+    
+  }
+  
+  .full-width {
+    width: 100%;
+  }
+  
+  .textarea {
+    height: 20vh;
+    resize: none;
+  }
+  
+  .submit-button {
+    padding: 1rem;
+    background-color: #00111e;
+    color: white;
+    border: none;
+    border-radius: 0.6rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .submit-button:hover {
+    transform: scale(1.01);
+    background-color: #16bbda;
+    color: #000;
+    font-weight: 600;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .contact-container {
+      flex-direction: column;
+      padding: 4vh 2vw;
+    }
+    .contact-left, .contact-right {
+      flex: 1 1 100%;
+    }
+    .form-row {
+      flex-direction: column;
+    }
+  }
+  

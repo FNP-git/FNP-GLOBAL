@@ -9,3 +9,27 @@ html , body{
     width: 100%;
     
 }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  html, body {
+    height: 100%;
+    width: 100%;
+  }
+  
+  .cursor {
+    height: 22px;
+    width: 22px;
+    border-radius: 50%;
+    position: fixed;
+    background-color: #22D3EE;
+    z-index: 9999;
+    mix-blend-mode: difference;
+    pointer-events: none;
+    transition: all linear 0.05s;
+  }
+  

@@ -45,24 +45,29 @@
   .who-heading {
     font-size: 3rem;
     font-weight: 600;
+    text-wrap: nowrap;
     color: #00cfff;
     margin-bottom: 1rem;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
   
   .who-description {
     font-size: 1rem;
     line-height: 1.6;
     color: #d4d4d4;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
   
   /* Responsive behavior */
   @media screen and (max-width: 768px) {
     .who-wrapper {
-      flex-direction: column;
+      flex-direction: row;
       align-items: center;
       gap: 5vh;
+    }
+    .who-text {
+      color: white;
+      padding: 0 1vw;
+      max-width: 60vw;
+      text-align: center;
     }
   
     .who-section {
@@ -78,3 +83,36 @@
     }
   }
   
+
+/* Extra Small Devices (up to 480px) */
+@media screen and (max-width: 480px) {
+  .who-heading {
+    font-size: 1.25rem;
+  }
+
+  .who-description {
+    font-size: 0.9rem;
+  }
+
+  .who-illustration {
+    width: 150px;
+  }
+}
+@media screen and (max-width: 426px) {
+  .who-wrapper{
+    flex-direction: column;
+  }
+  .who-illustration {
+    width: 85%;
+  }
+  .who-section{
+    width: 100%;
+  }
+   .who-text{
+    width: 100%;
+    padding: 0vw;
+  }
+  .who-description{
+    line-height: 1.4;
+  }
+}
