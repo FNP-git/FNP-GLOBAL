@@ -10,7 +10,7 @@
     margin: 5vh auto;
     border: 0.15rem solid #19d3ff;
     border-radius: 2rem;
-    background: radial-gradient(circle at top left, #0c2235, #010f1a);
+    background: transparent;
     box-shadow: 0 0.8rem 2rem rgba(0, 0, 0, 0.2);
     flex-wrap: nowrap;
     margin-top: 19vh;
@@ -116,3 +116,25 @@
     line-height: 1.4;
   }
 }
+@media screen and (max-width: 320px) {
+  .who-illustration {
+    width: 100%;
+  }
+
+  .who-section {
+    width: 100%;
+  }
+
+  .who-text {
+    width: 100%;
+    max-width: 100% !important; /* override previous 25vw */
+    padding: 0;
+  }
+
+  .who-description {
+    font-size: 0.7rem;
+    line-height: 1.4;
+    width: 100%;
+  }
+}
+

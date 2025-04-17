@@ -129,3 +129,17 @@
 #para {
   width: 15vw;
 }
+@media screen and (max-width: 426px){
+  .footer{
+    font-size: 1rem;
+  }
+  .footer-section h3,
+  .footer-section h4 {
+  font-size: 0.9rem;}
+  .footer-section a,
+.footer-section p,
+.footer-section ul {
+  font-size: 0.8rem;
+  line-height: 1.3;
+}
+}

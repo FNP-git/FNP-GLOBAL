@@ -31,3 +31,27 @@ html , body{
     transform: scale(1.05);
     transition: all 0.7s ease-out;
 }
+@media screen and (max-width: 768px){
+   #global-main{
+    height: 70vh;
+   }
+}
+@media screen and (max-width: 426px){
+#map{
+    max-width: 90%;
+    margin-top: 2vh;
+}
+#global-head{
+    margin-top: 8vh;
+    font-size: 5vh;
+}
+}
+@media screen and (max-width: 320px){
+    #global-head{
+        margin-top: 55vh;
+        font-size: 3.5vh;
+    }
+    #global-main{
+        height: 100vh;
+    }
+}

@@ -13,7 +13,7 @@ html , body{
     background:transparent;      /* dark navy background */
     border-radius: 16px;
     padding: 2rem;
-    max-width: 800px;         /* or whatever width you prefer */
+    width: 70vw;         /* or whatever width you prefer */
     margin: 2rem auto;
   }
   
@@ -52,4 +52,41 @@ html , body{
     line-height: 1.6;
     color: #E5E7EB;            /* light grayish white */
   }
-  
+  @media screen and (max-width: 768px){
+    .big-card__text{
+        font-size: 0.8rem;
+    }
+  }
+  @media screen and (max-width: 426px){
+    .big-card{
+      flex-direction: column;
+      align-items: center;
+      margin: 0rem;
+      padding: 1rem;
+    }
+    .big-card__number-box{
+      width: 60px;
+      height: 60px;
+      margin-right: 0rem;
+    }
+    .big-card__number{
+      font-size: 1.8rem;
+    }
+    .big-card__title{
+      margin-top: 1vh;
+      font-size: 1.2rem;
+      text-align: center;
+    }
+    .big-card__text{
+      text-align: center;
+      width: 80vw;
+    }
+  }
+  @media screen and (max-width: 320px){
+    .big-card__title{
+      font-size: 1rem;
+    }
+    .big-card__text{
+      font-size: 1.9vh;
+    }
+  }

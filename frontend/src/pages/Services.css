@@ -71,4 +71,26 @@ html , body{
     background-color: #16bbda;
     color: #011325;
   }
+  @media (max-width: 768px){
+    #serv{
+      height: 430vh;
+    }
+  }
+  @media (max-width: 426px){
+    #serv{
+      margin-top: 210vh;
+    }
+    
+  }
+  @media (max-width: 320px){
+    #serv-head2{
+      font-size: 5vh;
+    }
+    #serv-head{
+      font-size: 5vh;
+    }
+    #serv{
+      height: 350vh;
+    }
+  }
   

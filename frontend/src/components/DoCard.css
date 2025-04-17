@@ -3,7 +3,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 70vw;
+    width: 80vw;
     padding: 2rem;
     background-color: transparent;
     border: 0.15rem solid #19d3ff;
@@ -62,4 +62,38 @@
       text-align: center;
       max-width: 100%;
     }
+  }
+  @media screen and (max-width: 1440px){
+    .do-container{
+      width: 83vw;
+    }
+  }
+  @media screen and (max-width: 426px){
+    .do-heading{
+      font-size: 2rem;
+    }
+    .do-list{
+      font-size: 0.8rem;
+      line-height: 1.5;
+      width: 100%;
+      padding: 0 0rem;
+
+    }
+  }
+  @media screen and (max-width: 320px){
+    .do-heading{
+      font-size: 1.5rem;
+    }
+    .do-list{
+      font-size: 0.8rem;
+      line-height: 1.5;
+      width: 100%;
+      padding: 0 0rem;
+
+    }
+    .do-container{
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+
   }

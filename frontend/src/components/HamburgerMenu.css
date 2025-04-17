@@ -1,0 +1,78 @@
+.hamburger-toggle {
+    display: none;
+  }
+  
+  @media (max-width: 2160px){
+    #bghm{
+        display: none;
+    }
+  }
+  @media (max-width: 426px) {
+    /* hide original header menu when hamburger is active */
+    #menu {
+      display: none !important;
+    }
+    #bghm{
+        display: block;
+    }
+  
+    .hamburger-toggle {
+      display: block;
+      position: absolute;
+      top: 7vh;
+      right: 8vw;
+      width: 8vw;
+      height: auto;
+      z-index: 1001;
+      cursor: pointer;
+    }
+    #hm-lgo{
+        width: 50vw;
+        height: auto;
+        margin-top: 4.5vh;
+        margin-left: 10vw;
+    }
+  
+    .hamburger-overlay {
+      position: fixed;
+      top: 0;
+      left: 100%; /* hidden by default */
+      width: 100vw;
+      height: 100vh;
+      background: url("../assets/hambg.png") center/cover no-repeat;
+      transition: left 0.3s ease;
+      z-index: 1000;
+    }
+  
+    .hamburger-overlay.open {
+      left: 0;
+    }
+  
+    .hamburger-nav {
+        margin-top: 15vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+  
+    
+  
+    .hamburger-nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+  
+    .hamburger-nav li {
+      margin: 6vh 0;
+    }
+  
+    .hamburger-nav a {
+      color: #fff;
+      font-size: 5vw;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  }

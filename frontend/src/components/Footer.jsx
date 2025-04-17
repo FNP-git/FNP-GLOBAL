@@ -1,6 +1,6 @@
-// Footer.jsx
 import React from 'react';
 import './Footer.css';
+import { NavLink } from 'react-router-dom';
 import { FaFacebookF, FaLinkedinIn, FaInstagram, FaPhoneAlt, FaMapMarkerAlt, FaEnvelope } from 'react-icons/fa';
 import canada from '../assets/Canada.svg';
 import india from '../assets/india.svg';
@@ -9,7 +9,7 @@ import usa from '../assets/USA.svg';
 const Footer = () => {
   return (
     <footer className="footer">
-        <hr id='hr' />
+      <hr id='hr' />
       <div className="footer-container">
         <div className="footer-section about">
           <h3>About Us</h3>
@@ -24,13 +24,12 @@ const Footer = () => {
         <div className="footer-section company">
           <h3>Company</h3>
           <ul>
-            <li>Privacy Policy</li>
-            <li>Home</li>
-            <li>About Us</li>
-            <li>Blog</li>
-            <li>Contact Us</li>
-            <li>Refund Policy</li>
-            <li>Shipping Policy</li>
+            <li><NavLink to="/">Home</NavLink></li>
+            <li><NavLink to="/about">About Us</NavLink></li>
+            <li><NavLink to="/blogs">Blog</NavLink></li>
+            <li><NavLink to="/contact">Contact Us</NavLink></li>
+            <li>Refund Policy {/* Add NavLink when route is ready */}</li>
+            <li>Shipping Policy {/* Add NavLink when route is ready */}</li>
           </ul>
         </div>
 

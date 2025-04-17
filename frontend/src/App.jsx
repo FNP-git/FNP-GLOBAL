@@ -5,11 +5,13 @@ import BlogPage from './pages/BlogPage'
 import Contact from './pages/Contact'
 import { Routes, Route } from 'react-router-dom'
 import CustomCursor from './components/CustomCursor'
+import ScrollToTop from './components/ScrollToTop'
 
 const App = () => {
   return (
     <>
-    <CustomCursor />
+      <CustomCursor />
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />

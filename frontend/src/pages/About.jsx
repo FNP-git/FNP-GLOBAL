@@ -47,7 +47,7 @@ const About = () => {
                 />
                 <DirCard
                   image={anshul}
-                  name="Narednra"
+                  name="Narendra"
                   position="Managing Director"
                 />
                 <DirCard
