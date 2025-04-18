@@ -9,7 +9,6 @@ html , body{
 }
 #serv{
     background-color: #011325;
-    height: 410vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -32,7 +31,7 @@ html , body{
     object-fit: cover;
     width: 100%;
     opacity: 0.5;
-    z-index: 1;
+    z-index: 5;
 }
 .services-grid {
     display: grid;
@@ -40,13 +39,19 @@ html , body{
     gap: 2rem;
     padding: 2rem;
     justify-items: center; /* center cards in each column */
-    z-index: 5;
+    
   }
   
   /* Optional responsive tweak: stack into one column on small screens */
   @media (max-width: 600px) {
     .services-grid {
       grid-template-columns: 1fr;
+    }
+    #serv-head{
+      font-size: clamp(3rem, 5vw, 2.5rem);
+    }
+    #serv-head2{
+      font-size: clamp(2.8rem, 5vw, 2.5rem);
     }
   }
   
@@ -72,16 +77,24 @@ html , body{
     color: #011325;
   }
   @media (max-width: 768px){
-    #serv{
-      height: 430vh;
+    
+    .services-grid{
+      padding: 0rem;
+    }
+    #serv-head{
+      margin-top: 14vh;
     }
   }
   @media (max-width: 426px){
-    #serv{
-      margin-top: 210vh;
+    #serv-head2{
+      margin-top: 10vh;
     }
     
+    
   }
+ 
+    
+    
   @media (max-width: 320px){
     #serv-head2{
       font-size: 5vh;

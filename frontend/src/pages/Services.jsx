@@ -8,6 +8,7 @@ import legal from '../assets/legal.png';
 import market from '../assets/market.png';
 import BigCard from '../components/BigCard';
 import mirror from '../assets/mirror.svg';
+import { useNavigate } from 'react-router-dom';
 
 const services = [
   { img: business, label: 'Business Setup & Expansion' },
@@ -17,6 +18,8 @@ const services = [
 ];
 
 const Services = ({ showButton = true }) => {
+  const navigate = useNavigate();
+
   return (
     <>
       <img id='serv-bg' src={servbg} alt="services bg" />
@@ -54,7 +57,11 @@ const Services = ({ showButton = true }) => {
           Built on trust, transparency, and value, we empower you to make confident business decisions—every step of the way.
         </BigCard>
 
-        {showButton && <button className='lrn'>Learn More</button>}
+        {showButton && (
+          <button className='lrn' onClick={() => navigate('/about')}>
+            Learn More
+          </button>
+        )}
       </div>
     </>
   );

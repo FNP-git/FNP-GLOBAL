@@ -47,4 +47,20 @@
   .read-more-btn:hover {
     background-color: #00b7ff;
   }
- 
+  @media (max-width: 768px){
+    .blog-card{
+      width: 80% !important;
+    }
+  }
+  @media (max-width: 426px){
+    .blog-card{
+      width: 60vw !important;
+      height: clamp(10rem, 30rem, 20rem);
+    }
+    .blog-content h3{
+      font-size: 0.8rem !important;
+    }
+    .read-more-btn{
+      font-size: 0.7rem !important;
+    }
+  }

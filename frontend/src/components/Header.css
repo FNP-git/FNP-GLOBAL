@@ -60,8 +60,10 @@
   }
   
   /* hide desktop menu on small screens */
-  @media (max-width: 426px) {
+  @media (max-width: 835px) {
     #menu {
       display: none;
     }
+    #hmlogo {
+      height: 10vh;}
   }

@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import BlogCard from '../components/BlogCard';
 import './Blogs.css';
 import img1 from '../assets/financial.png';
@@ -22,6 +23,7 @@ const Blogs = ({ showButton = true }) => {
   const [index, setIndex] = useState(0);
   const wrapperRef = useRef(null);
   const [isAnimating, setIsAnimating] = useState(true);
+  const navigate = useNavigate();
 
   const extendedBlogs = [
     ...blogData.slice(-3),
@@ -84,7 +86,11 @@ const Blogs = ({ showButton = true }) => {
         </button>
       </div>
 
-      {showButton && <button className="show-more">Show More</button>}
+      {showButton && (
+        <button className="show-more" onClick={() => navigate('/blogs')}>
+          Show More
+        </button>
+      )}
     </div>
   );
 };

@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-
 const CustomCursor = () => {
   useEffect(() => {
     const cursor = document.querySelector('.cursor');

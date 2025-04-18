@@ -11,7 +11,6 @@ html , body{
 }
 .abt{
     background-color: #011325;
-    height: 500vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -110,7 +109,6 @@ html , body{
 @media screen and (max-width: 1024px) {
     .abt{
       margin-top: 25vh;
-        height: 580vh;
     }
     .abt-head {
       font-size: 3.2vh;
@@ -166,8 +164,7 @@ html , body{
   /* Mobile screens (768px and below) */
   @media screen and (max-width: 768px) {
     .abt {
-      padding: 5vh 0;
-      margin-top: 20vh;
+      margin-top:clamp(3rem, 5vw, 2.5rem);;
     }
   
     .abt-head {
@@ -219,15 +216,10 @@ html , body{
       gap: 2rem;
     }
   
-    #stbg {
-      margin-top: 200vh;
-    }
   }
   
   @media screen and (max-width: 426px) {
-    .abt{
-      margin-top: 170vh;
-    }
+   
     #directors1,
     #directors2 {
       flex-direction: column;
@@ -240,21 +232,14 @@ html , body{
     }
     
   }
-  @media screen and (max-width: 1440px) {
-    .abt{
-        height: 210rem;
-    }
-  }
-  @media screen and (max-width: 376px) {
-    .abt{
-      margin-top: 170vh;
-    }
-  }
+ 
   @media screen and (max-width: 320px) {
-    .abt{
-      margin-top: 140vh;
-    }
    #st-para{
     font-size: 0.7rem;
    }
+  }
+  @media screen and (max-width: 376px){
+    .abt{
+      margin-top: 0;
+    }
   }

@@ -14,4 +14,21 @@
     margin-bottom: 2.5rem;
     color: #00BFFF;
   }
-  
+  @media (max-width: 768px){
+    .blog-container{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 5vw;
+    }
+  }
+  @media (max-width: 426px){
+    .blog-container{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 5vw;
+    }
+  }

@@ -11,7 +11,7 @@
   
   .homepg {
     position: relative; /* Required for absolute children */
-    height: 110vh;
+    height: 115vh;
     width: 100%;
     overflow: hidden;
   }
@@ -55,9 +55,10 @@
   /* Heading style */
   #main-head {
     color: white;
-    font-size: 7vh;
+    white-space: nowrap;
+    font-size: clamp(2rem, 6vw, 3.1rem);
     text-align: center;
-    line-height: 2vh;
+    line-height: 1rem;
   }
   
   /* Container for top line (with image and part of heading) */
@@ -77,9 +78,10 @@
   #rectimg {
     margin-bottom: 40px;
     margin-right: 15px;
+    
   }
   #bx{
-    height: 22vh;
+    height: clamp(6rem, 20vh, 16rem);
     margin-top: 4vh;
     transition: transform 0.6s;
     transform-style: preserve-3d;
@@ -90,6 +92,7 @@
   #subhead{
     color: white;
     font-weight: 500;
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
   }
   #btn2{
     color: white;
@@ -111,4 +114,109 @@
   }
 
 
- 
+  @media (max-width: 680px) {
+    #main-head{
+      font-size: 3rem;
+    }
+    #rectimg{
+      height: 7.5rem;
+    }
+    #bx{
+      height: 15vh;
+    }
+    #main{
+      margin-top: 0;
+      height: 70vh;
+    }
+    #subhead{
+      font-size: 3.5vh
+    }
+    .homepg{
+      height: 100vh;
+    }
+    #btn2{
+      padding: 1vh 1.8vw;
+      font-size: 2vh;
+    }
+    #scr{
+      height: 8vh;
+    }
+  }
+  
+  @media (max-width: 890px) {
+    #main-head{
+      font-size: 3.1rem;
+    }
+    #rectimg{
+      height: 7.5rem;
+    }
+    #bx{
+      height: 7rem;
+    }
+    #main{
+      margin-top: 0;
+      height: 70vh;
+    }
+    #subhead{
+      font-size: 3.5vh
+    }
+    .homepg{
+      height: 100vh;
+    }
+    #btn2{
+      padding: 1vh 1.8vw;
+      font-size: 2vh;
+    }
+    #scr{
+      height: 8vh;
+    }
+  }
+  @media (max-width: 790px){
+    #main-head{
+      font-size: 4vh;
+    }
+    #rectimg{
+      height: 13vh;
+      margin-bottom: 2vh;
+      margin-right: 1vw
+    }
+    #subhead{
+      font-size: 3vh
+    }
+  }
+  @media (max-width: 568px){
+    #main-head{
+      font-size: clamp(1.5rem, 5vw, 2.5rem);
+    }
+    #rectimg{
+      height: clamp(2.5rem, 5vw, 4rem);vw
+    }
+    #subhead{
+      font-size: clamp(1.2rem, 5vw, 2.5rem);
+    }
+  }
+  
+  @media (max-width: 376px){
+    #main-head{
+      font-size: clamp(1rem, 3.5vw, 1.3rem);
+    }
+    #rectimg{
+      height: 8vh;
+      margin-bottom: 2vh;
+      margin-right: 1vw
+    }
+    #subhead{
+      font-size: 2.5vh
+    }
+  }
+  @media (max-width: 330px){
+    #main-head{
+      font-size: clamp(0.9rem, 3vw, 1.2rem);
+    }
+    #rectimg{
+      height: clamp(2rem, 3vw, 2.5rem);
+    }
+    #subhead{
+      font-size: 2.5vh
+    }
+  }

@@ -58,3 +58,19 @@
     z-index: 2;
     object-fit: contain;
   }
+  @media screen and (max-width: 768px) {
+    .clients-container{
+      height: 60vh;
+    }
+    #client-head{
+      font-size: 5vh;
+      margin-top: 8vh;   }
+  }
+  @media screen and (max-width: 426px) {
+    .clients-container{
+      height: clamp(20rem, 30rem, 20rem);
+    }
+    #client-head{
+      font-size: 5vh;
+    margin-top: 10vh;   }
+  }

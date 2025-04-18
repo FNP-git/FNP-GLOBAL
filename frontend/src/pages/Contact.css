@@ -54,4 +54,32 @@
     color: #C9F7FF;
     line-height: 1.6;
   }
+  @media screen and (max-width:426px){
+    .contact-head {
+      font-size: 3vh;
+    }
+    .contact-subhead {
+      font-size: 1.2vh;
+    }
+    #contact-para {
+      font-size: 0.8rem;
+    }
+    #contact-logo {
+      height: 15vh;
+    }
+    .contact{
+    padding-top: 0vh;
+    height: 70vh;
+    }
+    .contact-content {
+      max-width: 85vw;
+    }
+    #contact-para {
+      font-size: 0.8rem;}
+  }
+  @media screen and (max-width:768px){
+    .contact-head {
+      font-size: 3vh;
+    }
+  }
   

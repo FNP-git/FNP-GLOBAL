@@ -34,7 +34,7 @@ const blogs = [
     {
       image: img1,
       title: 'Market Research: Unlocking Consumer Insights Worldwide',
-      text: 'Effective research fuels global strategy. Discover how to analyze trends, competitors, and customer needs...',
+      text: 'Effective research fuels global strategy. Discover how to analyze trends, competitors...',
     },
     {
       image: img1,
@@ -44,7 +44,7 @@ const blogs = [
     {
       image: img1,
       title: 'Why Startups Need a Scalable Business Strategy',
-      text: 'Early-stage growth requires smart planning. Here’s how startups can build strategies that scale with success...',
+      text: 'Early-stage growth requires smart planning. Here’s how startups can build strategies...',
     },
     {
       image: img1,
@@ -60,13 +60,14 @@ const blogs = [
   
 
 const BlogContainer = () => {
-  return (
-    <div className="blog-container">
+  return (<>
       <h1 className="trend-heading">Trend Talks</h1>
+    <div className="blog-container">
       {blogs.map((blog, index) => (
         <FullCard key={index} {...blog} />
       ))}
     </div>
+    </>
   );
 };
 

@@ -40,7 +40,7 @@ const ContForm = () => {
         <form className="form">
           <div className="form-row">
             <div className="form-group">
-              <label htmlFor="firstName">First Name *</label>
+              <label id="lbl" htmlFor="firstName">First Name *</label>
               <input
                 type="text"
                 id="firstName"
@@ -49,7 +49,7 @@ const ContForm = () => {
               />
             </div>
             <div className="form-group">
-              <label htmlFor="lastName">Last Name *</label>
+              <label id="lbl" htmlFor="lastName">Last Name *</label>
               <input
                 type="text"
                 id="lastName"
@@ -59,7 +59,7 @@ const ContForm = () => {
             </div>
           </div>
           <div className="form-group">
-            <label htmlFor="phone">Phone *</label>
+            <label id="lbl" htmlFor="phone">Phone *</label>
             <input
               type="tel"
               id="phone"
@@ -68,7 +68,7 @@ const ContForm = () => {
             />
           </div>
           <div className="form-group">
-            <label htmlFor="email">Email *</label>
+            <label id="lbl" htmlFor="email">Email *</label>
             <input
               type="email"
               id="email"
@@ -77,7 +77,7 @@ const ContForm = () => {
             />
           </div>
           <div className="form-group">
-            <label htmlFor="message">Message</label>
+            <label id="lbl" htmlFor="message">Message</label>
             <textarea
               id="message"
               placeholder="Hi, I'm interested in learning more about your services. Please get back to me."

@@ -115,12 +115,13 @@
   
   /* Responsive */
   @media (max-width: 768px) {
+    
     .blogs-heading {
       font-size: 5vh;
     }
     
     .blog-card-container {
-      flex: 0 0 calc(100% - 2vh);
+      flex: 0 0 calc(47%);
       margin-right: 2vh;
     }
     
@@ -135,5 +136,11 @@
     .arw-button svg {
       height: 1.2rem;
       width: 1.2rem;
+    }
+  }
+  @media (max-width: 426px){
+    .blog-card-container {
+      flex: 0 0 calc(40%);
+      margin-right: 19vh;
     }
   }

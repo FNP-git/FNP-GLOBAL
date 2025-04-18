@@ -121,4 +121,24 @@
       flex-direction: column;
     }
   }
-  
+  @media screen and (max-width: 426px){
+    .contact-container{
+      padding: 4vh 2vw;
+      max-width: 90vw;
+    }
+    .contact-heading {
+      font-size: 1.5rem;}
+      .contact-text {
+        font-size: 0.85rem;
+        line-height: 1.4;
+      }
+      .contact-info {
+        font-size: 0.9rem;}
+        .submit-button {
+          font-size: 0.8rem;
+          padding: 0.5rem;
+        }
+        #lbl{
+          font-size: 0.8rem;
+        }
+  }

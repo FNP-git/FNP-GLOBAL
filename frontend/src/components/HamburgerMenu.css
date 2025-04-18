@@ -7,7 +7,7 @@
         display: none;
     }
   }
-  @media (max-width: 426px) {
+  @media (max-width: 835px) {
     /* hide original header menu when hamburger is active */
     #menu {
       display: none !important;

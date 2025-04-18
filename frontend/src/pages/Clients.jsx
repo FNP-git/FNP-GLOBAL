@@ -23,44 +23,44 @@ const sampleNames = [
 
 const Clients = () => {
   const totalCards = sampleTexts.length;
-  const [index, setIndex] = useState(2); // start from first actual card
+  const [index, setIndex] = useState(2);
   const wrapperRef = useRef(null);
+  const containerRef = useRef(null);
   const [isAnimating, setIsAnimating] = useState(true);
 
-  // Create duplicated array for seamless looping
   const extendedCards = [
-    ...sampleTexts.slice(-2), // last two at start
+    ...sampleTexts.slice(-2),
     ...sampleTexts,
-    ...sampleTexts.slice(0, 2), // first two at end
+    ...sampleTexts.slice(0, 2),
   ];
-
   const extendedNames = [
     ...sampleNames.slice(-2),
     ...sampleNames,
     ...sampleNames.slice(0, 2),
   ];
 
+  // Drag state
+  const isDragging = useRef(false);
+  const startX = useRef(0);
+  const currentTranslate = useRef(0);
+  const prevTranslate = useRef(0);
+
   const handleNext = () => {
-    if (index < totalCards + 2) {
-      setIndex((prev) => prev + 2);
-    }
+    if (index < totalCards + 2) setIndex((prev) => prev + 2);
   };
 
   const handlePrev = () => {
-    if (index > 0) {
-      setIndex((prev) => prev - 2);
-    }
+    if (index > 0) setIndex((prev) => prev - 2);
   };
 
-  // Reset position without animation if needed (looping)
+  // Auto-loop reset
   useEffect(() => {
     if (index === totalCards + 2) {
       setTimeout(() => {
         setIsAnimating(false);
         setIndex(2);
-      }, 600); // match transition duration
-    }
-    if (index === 0) {
+      }, 600);
+    } else if (index === 0) {
       setTimeout(() => {
         setIsAnimating(false);
         setIndex(totalCards);
@@ -70,31 +70,82 @@ const Clients = () => {
     }
   }, [index, totalCards]);
 
+  // Drag handlers
+  const handleMouseDown = (e) => {
+    isDragging.current = true;
+    startX.current = e.pageX || e.touches[0].pageX;
+    wrapperRef.current.style.transition = 'none';
+  };
+
+  const handleMouseMove = (e) => {
+    if (!isDragging.current) return;
+    const x = e.pageX || e.touches[0].pageX;
+    const distance = x - startX.current;
+    wrapperRef.current.style.transform = `translateX(calc(-${index * 22}vw + ${distance}px))`;
+    currentTranslate.current = distance;
+  };
+
+  const handleMouseUp = () => {
+    if (!isDragging.current) return;
+    isDragging.current = false;
+    wrapperRef.current.style.transition = 'transform 0.5s ease-in-out';
+
+    if (currentTranslate.current < -100) {
+      handleNext();
+    } else if (currentTranslate.current > 100) {
+      handlePrev();
+    } else {
+      wrapperRef.current.style.transform = `translateX(-${index * 22}vw)`;
+    }
+    currentTranslate.current = 0;
+  };
+
+  useEffect(() => {
+    const container = containerRef.current;
+    container.addEventListener('mousedown', handleMouseDown);
+    container.addEventListener('mousemove', handleMouseMove);
+    container.addEventListener('mouseup', handleMouseUp);
+    container.addEventListener('mouseleave', handleMouseUp);
+    container.addEventListener('touchstart', handleMouseDown);
+    container.addEventListener('touchmove', handleMouseMove);
+    container.addEventListener('touchend', handleMouseUp);
+
+    return () => {
+      container.removeEventListener('mousedown', handleMouseDown);
+      container.removeEventListener('mousemove', handleMouseMove);
+      container.removeEventListener('mouseup', handleMouseUp);
+      container.removeEventListener('mouseleave', handleMouseUp);
+      container.removeEventListener('touchstart', handleMouseDown);
+      container.removeEventListener('touchmove', handleMouseMove);
+      container.removeEventListener('touchend', handleMouseUp);
+    };
+  }, [index]);
+
   return (
     <div id="client-main">
-        <h1 id="client-head">WHAT OUR CLIENTS SAY</h1>
-        <img id="tstbg" src={testbg} alt="testimonials background" />
-    <div className="clients-container">
-      <button className="arrow-button left" onClick={handlePrev}>‹</button>
-      <div className="slider-window">
-        <div
-          ref={wrapperRef}
-          className={`cards-wrapper ${isAnimating ? 'animate' : ''}`}
-          style={{
-            transform: `translateX(-${index * 22}vw)`,
-          }}
-        >
-          {extendedCards.map((text, i) => (
-            <TestCard
-              key={i}
-              text={text}
-              name={extendedNames[i]}
-            />
-          ))}
+      <h1 id="client-head">WHAT OUR CLIENTS SAY</h1>
+      <img id="tstbg" src={testbg} alt="testimonials background" />
+      <div className="clients-container" ref={containerRef}>
+        <button className="arrow-button left" onClick={handlePrev}>‹</button>
+        <div className="slider-window">
+          <div
+            ref={wrapperRef}
+            className={`cards-wrapper ${isAnimating ? 'animate' : ''}`}
+            style={{
+              transform: `translateX(-${index * 22}vw)`,
+            }}
+          >
+            {extendedCards.map((text, i) => (
+              <TestCard
+                key={i}
+                text={text}
+                name={extendedNames[i]}
+              />
+            ))}
+          </div>
         </div>
+        <button className="arrow-button right" onClick={handleNext}>›</button>
       </div>
-      <button className="arrow-button right" onClick={handleNext}>›</button>
-    </div>
     </div>
   );
 };
