@@ -7,7 +7,7 @@ import financial from '../assets/financial.png';
 import legal from '../assets/legal.png';
 import market from '../assets/market.png';
 import BigCard from '../components/BigCard';
-import mirror from '../assets/mirror.svg';
+import mirror from '../assets/Mirror.svg';
 import { useNavigate } from 'react-router-dom';
 
 const services = [
