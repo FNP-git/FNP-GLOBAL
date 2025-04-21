@@ -189,7 +189,7 @@
       font-size: clamp(1.5rem, 5vw, 2.5rem);
     }
     #rectimg{
-      height: clamp(2.5rem, 5vw, 4rem);vw
+      height: clamp(2.5rem, 5vw, 4rem);
     }
     #subhead{
       font-size: clamp(1.2rem, 5vw, 2.5rem);

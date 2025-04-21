@@ -53,7 +53,7 @@ const About = () => {
                 <DirCard
                   image={anshul}
                   name="Prateek Varshney"
-                  position="Managing Director"
+                  position="Founder & COO"
                 />
               </div>
               <div id="directors2">
