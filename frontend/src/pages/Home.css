@@ -199,7 +199,7 @@
   
   @media (max-width: 376px){
     #main-head{
-      font-size: clamp(1rem, 3.5vw, 1.3rem);
+      font-size: clamp(1rem, 4vw, 1.3rem);
     }
     #rectimg{
       height: 8vh;
