@@ -4,7 +4,13 @@ import Header from '../components/Header'
 import bg from '../assets/abtbg.png'
 import abtlogo from '../assets/abt-logo.png'
 import DirCard from '../components/DirCard'
-import anshul from '../assets/dirimg.png'
+import anshul from '../assets/anshul.png'
+import prateek from '../assets/prateek.png'
+import frank from '../assets/frank.png'
+import lizi from '../assets/lizi.png'
+import pranjal from '../assets/pranjal.png'
+import dennis from '../assets/dennis.png'
+import freddy from '../assets/freddy.png'
 import stbg from '../assets/Mirror.svg'
 import Team from '../components/Team'
 import Services from './Services'
@@ -41,7 +47,7 @@ const About = () => {
               <h1 className="str-head">OUR STORY</h1>
               <div id="directors1">
                     <DirCard
-                  image={anshul}
+                  image={frank}
                   name="Frank Parshu"
                   position="Founder & CEO"
                 />
@@ -51,14 +57,14 @@ const About = () => {
                   position="Managing Director"
                 />
                 <DirCard
-                  image={anshul}
+                  image={prateek}
                   name="Prateek Varshney"
                   position="Founder & COO"
                 />
               </div>
               <div id="directors2">
                     <DirCard
-                  image={anshul}
+                  image={lizi}
                   name="Elizabeth Mary"
                   position="Additional Director"
                 />
@@ -78,7 +84,7 @@ At FNP Global Business Consultancy, your success is our mission. Let’s build t
               <div id="tm-list">
                 <div id='tm1'>
                   <Team 
-                image={anshul}
+                image={freddy}
                 name="FREDDY PARSHU"
                 position="Manager"
                 dep="(Sales)"
@@ -91,12 +97,12 @@ At FNP Global Business Consultancy, your success is our mission. Let’s build t
               /></div>
               <div id='tm1'>
                 <Team 
-                image={anshul}
+                image={pranjal}
                 name="PRANJAL PUJARI"
                 position="Team Lead"
                 dep="(Backend)"
               /><Team 
-                image={anshul}
+                image={dennis}
                 name="STANLEY VICTOR"
                 position="Vice-President"
                 dep="(Marketing)"
