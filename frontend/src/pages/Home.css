@@ -105,7 +105,8 @@
     margin-top: 2vh;
   }
   #scr{
-    margin-top: 3vh;;
+    margin-top: 3vh;
+    height: 3.5rem;
   }
   #btn2:hover{
     background-color: #ffff;
