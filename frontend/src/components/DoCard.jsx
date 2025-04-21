@@ -14,7 +14,7 @@ const DoCard = ({ heading, contentList, image }) => {
         </ul>
       </div>
       <div className="do-right">
-        <img src={image} alt="Do illustration" className="do-image" />
+        <img src={image} alt="Do illustration" id="do-image" />
       </div>
       </div>
     </div>
