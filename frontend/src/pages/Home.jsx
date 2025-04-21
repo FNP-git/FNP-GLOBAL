@@ -1,6 +1,6 @@
 import React from 'react'
 import './Home.css'
-import vid from '../assets/homevid.mov'
+import vid from '../assets/homevid.mp4'
 import Header from '../components/Header'
 import rect from '../assets/rect.svg'
 import box from '../assets/box.png'
