@@ -66,9 +66,7 @@
       font-size: 5vh;
       margin-top: 8vh;   }
     
-    .cards-wrapper.animate {
-        transition: none !important;
-      }
+    
       .arrow-button {
         display: none;
       }

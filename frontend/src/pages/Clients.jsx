@@ -52,55 +52,51 @@ const Clients = () => {
   const currentTranslate = useRef(0);
 
   const handleNext = () => {
-    if (index < totalCards + 2) setIndex((prev) => prev + 2);
+    setIndex((prev) => prev + 2);
   };
 
   const handlePrev = () => {
-    if (index > 0) setIndex((prev) => prev - 2);
+    setIndex((prev) => prev - 2);
   };
 
-  // Looping logic on index change
   useEffect(() => {
     const total = totalCards + 2;
-
     if (index === total) {
       setTimeout(() => {
         setIsAnimating(false);
         setIndex(2);
-      }, 600);
+      }, 300);
     } else if (index === 0) {
       setTimeout(() => {
         setIsAnimating(false);
         setIndex(totalCards);
-      }, 600);
+      }, 300);
     } else {
       setIsAnimating(true);
     }
   }, [index, totalCards]);
 
-  // Reset animation state after instant jump
   useEffect(() => {
     if (!isAnimating) {
       setTimeout(() => setIsAnimating(true), 50);
     }
   }, [isAnimating]);
 
-  // Drag/swipe handlers
-  const handleMouseDown = (e) => {
+  const handleTouchStart = (e) => {
     isDragging.current = true;
-    startX.current = e.pageX || e.touches[0].pageX;
+    startX.current = e.touches[0].clientX;
     wrapperRef.current.style.transition = 'none';
   };
 
-  const handleMouseMove = (e) => {
+  const handleTouchMove = (e) => {
     if (!isDragging.current) return;
-    const x = e.pageX || e.touches[0].pageX;
-    const distance = x - startX.current;
-    wrapperRef.current.style.transform = `translateX(calc(-${index * 22}vw + ${distance}px))`;
-    currentTranslate.current = distance;
+    const currentX = e.touches[0].clientX;
+    const delta = currentX - startX.current;
+    wrapperRef.current.style.transform = `translateX(calc(-${index * 22}vw + ${delta}px))`;
+    currentTranslate.current = delta;
   };
 
-  const handleMouseUp = () => {
+  const handleTouchEnd = () => {
     if (!isDragging.current) return;
     isDragging.current = false;
     wrapperRef.current.style.transition = 'transform 0.5s ease-in-out';
@@ -115,25 +111,16 @@ const Clients = () => {
     currentTranslate.current = 0;
   };
 
-  // Attach event listeners
   useEffect(() => {
     const container = containerRef.current;
-    container.addEventListener('mousedown', handleMouseDown);
-    container.addEventListener('mousemove', handleMouseMove);
-    container.addEventListener('mouseup', handleMouseUp);
-    container.addEventListener('mouseleave', handleMouseUp);
-    container.addEventListener('touchstart', handleMouseDown);
-    container.addEventListener('touchmove', handleMouseMove);
-    container.addEventListener('touchend', handleMouseUp);
+    container.addEventListener('touchstart', handleTouchStart);
+    container.addEventListener('touchmove', handleTouchMove);
+    container.addEventListener('touchend', handleTouchEnd);
 
     return () => {
-      container.removeEventListener('mousedown', handleMouseDown);
-      container.removeEventListener('mousemove', handleMouseMove);
-      container.removeEventListener('mouseup', handleMouseUp);
-      container.removeEventListener('mouseleave', handleMouseUp);
-      container.removeEventListener('touchstart', handleMouseDown);
-      container.removeEventListener('touchmove', handleMouseMove);
-      container.removeEventListener('touchend', handleMouseUp);
+      container.removeEventListener('touchstart', handleTouchStart);
+      container.removeEventListener('touchmove', handleTouchMove);
+      container.removeEventListener('touchend', handleTouchEnd);
     };
   }, [index]);
 
