@@ -3,7 +3,7 @@ import './Footer.css';
 import { NavLink } from 'react-router-dom';
 import { FaFacebookF, FaLinkedinIn, FaInstagram, FaPhoneAlt, FaMapMarkerAlt, FaEnvelope } from 'react-icons/fa';
 import canada from '../assets/Canada.svg';
-import india from '../assets/india.svg';
+import india from '../assets/India.svg';
 import usa from '../assets/USA.svg';
 
 const Footer = () => {
