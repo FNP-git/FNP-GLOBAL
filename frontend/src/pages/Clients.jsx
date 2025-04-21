@@ -40,7 +40,6 @@ const Clients = () => {
     ...sampleNames.slice(0, 2),
   ];
 
-  // Handle screen resize
   useEffect(() => {
     const checkScreen = () => setIsSmallScreen(window.innerWidth <= 768);
     checkScreen();
@@ -48,7 +47,6 @@ const Clients = () => {
     return () => window.removeEventListener('resize', checkScreen);
   }, []);
 
-  // Drag state
   const isDragging = useRef(false);
   const startX = useRef(0);
   const currentTranslate = useRef(0);
@@ -61,7 +59,6 @@ const Clients = () => {
     if (index > 0) setIndex((prev) => prev - 2);
   };
 
-  // Auto-loop reset (skip on small screens)
   useEffect(() => {
     if (isSmallScreen) return;
 
@@ -80,7 +77,6 @@ const Clients = () => {
     }
   }, [index, totalCards, isSmallScreen]);
 
-  // Drag handlers
   const handleMouseDown = (e) => {
     isDragging.current = true;
     startX.current = e.pageX || e.touches[0].pageX;
@@ -100,9 +96,9 @@ const Clients = () => {
     isDragging.current = false;
     wrapperRef.current.style.transition = 'transform 0.5s ease-in-out';
 
-    if (currentTranslate.current < -100) {
+    if (currentTranslate.current < -50) {
       handleNext();
-    } else if (currentTranslate.current > 100) {
+    } else if (currentTranslate.current > 50) {
       handlePrev();
     } else {
       wrapperRef.current.style.transform = `translateX(-${index * 22}vw)`;
@@ -140,17 +136,13 @@ const Clients = () => {
         <div className="slider-window">
           <div
             ref={wrapperRef}
-            className={`cards-wrapper ${isAnimating && !isSmallScreen ? 'animate' : ''}`}
+            className={`cards-wrapper ${isAnimating ? 'animate' : ''}`}
             style={{
               transform: `translateX(-${index * 22}vw)`,
             }}
           >
             {extendedCards.map((text, i) => (
-              <TestCard
-                key={i}
-                text={text}
-                name={extendedNames[i]}
-              />
+              <TestCard key={i} text={text} name={extendedNames[i]} />
             ))}
           </div>
         </div>
