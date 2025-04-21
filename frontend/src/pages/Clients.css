@@ -69,6 +69,9 @@
     .cards-wrapper.animate {
         transition: none !important;
       }
+      .arrow-button {
+        display: none;
+      }
   }
   @media screen and (max-width: 426px) {
     .clients-container{
