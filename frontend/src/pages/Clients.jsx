@@ -27,6 +27,7 @@ const Clients = () => {
   const wrapperRef = useRef(null);
   const containerRef = useRef(null);
   const [isAnimating, setIsAnimating] = useState(true);
+  const [isSmallScreen, setIsSmallScreen] = useState(false);
 
   const extendedCards = [
     ...sampleTexts.slice(-2),
@@ -39,11 +40,18 @@ const Clients = () => {
     ...sampleNames.slice(0, 2),
   ];
 
+  // Handle screen resize
+  useEffect(() => {
+    const checkScreen = () => setIsSmallScreen(window.innerWidth <= 768);
+    checkScreen();
+    window.addEventListener('resize', checkScreen);
+    return () => window.removeEventListener('resize', checkScreen);
+  }, []);
+
   // Drag state
   const isDragging = useRef(false);
   const startX = useRef(0);
   const currentTranslate = useRef(0);
-  const prevTranslate = useRef(0);
 
   const handleNext = () => {
     if (index < totalCards + 2) setIndex((prev) => prev + 2);
@@ -53,8 +61,10 @@ const Clients = () => {
     if (index > 0) setIndex((prev) => prev - 2);
   };
 
-  // Auto-loop reset
+  // Auto-loop reset (skip on small screens)
   useEffect(() => {
+    if (isSmallScreen) return;
+
     if (index === totalCards + 2) {
       setTimeout(() => {
         setIsAnimating(false);
@@ -68,7 +78,7 @@ const Clients = () => {
     } else {
       setIsAnimating(true);
     }
-  }, [index, totalCards]);
+  }, [index, totalCards, isSmallScreen]);
 
   // Drag handlers
   const handleMouseDown = (e) => {
@@ -130,7 +140,7 @@ const Clients = () => {
         <div className="slider-window">
           <div
             ref={wrapperRef}
-            className={`cards-wrapper ${isAnimating ? 'animate' : ''}`}
+            className={`cards-wrapper ${isAnimating && !isSmallScreen ? 'animate' : ''}`}
             style={{
               transform: `translateX(-${index * 22}vw)`,
             }}

@@ -84,10 +84,19 @@ html , body{
     #serv-head{
       margin-top: 14vh;
     }
+    #serv-head2{
+      font-size: clamp(1.8rem, 6vw, 7vh);
+      white-space: nowrap;
+      overflow: hidden;
+      text-align: center;
+      text-overflow: ellipsis;
+    }
   }
   @media (max-width: 426px){
     #serv-head2{
       margin-top: 10vh;
+      white-space: nowrap;
+      overflow: hidden;
     }
     
     
@@ -98,6 +107,8 @@ html , body{
   @media (max-width: 320px){
     #serv-head2{
       font-size: 5vh;
+      white-space: nowrap;
+      overflow: hidden;
     }
     #serv-head{
       font-size: 5vh;
