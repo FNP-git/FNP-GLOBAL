@@ -97,11 +97,11 @@
       padding: 0rem 0;
     }
   }
-  @media (max-width: 426px){
+ @media (max-width: 426px){
     .fullcard{
       width: 80%;
       height: 60vh;
-    }
+     }
     .fullcard-title {
       font-size: 0.7rem;
     }
@@ -115,3 +115,4 @@
       padding: 0.5rem 0.5rem;
     }
   }
+ 
