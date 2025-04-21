@@ -8,6 +8,13 @@
     position: relative;
     overflow: hidden;
   }
+  .cards-wrapper.scrollable {
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+    transition: none;
+  }
   
   .slider-window {
     width: 90vw;
@@ -58,6 +65,10 @@
     z-index: 2;
     object-fit: contain;
   }
+  .test-card-container {
+    flex: 0 0 25%;
+    scroll-snap-align: center;
+  }
   @media screen and (max-width: 768px) {
     .clients-container{
       height: 60vh;
@@ -65,16 +76,27 @@
     #client-head{
       font-size: 5vh;
       margin-top: 8vh;   }
-    
+      
     
       .arrow-button {
         display: none;
       }
   }
+  @media screen and (min-width: 500px) and (max-width: 800px){
+    .test-card-container > * {
+      flex: 1;
+      height: 80%;
+    }
+  }
   @media screen and (max-width: 426px) {
     .clients-container{
       height: clamp(20rem, 30rem, 20rem);
     }
+    .test-card-container {
+      flex: 0 0 75%;
+      scroll-snap-align: center;
+    }
+    
     #client-head{
       font-size: 5vh;
     margin-top: 10vh;   }
