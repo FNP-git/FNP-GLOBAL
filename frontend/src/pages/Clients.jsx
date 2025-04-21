@@ -59,10 +59,11 @@ const Clients = () => {
     if (index > 0) setIndex((prev) => prev - 2);
   };
 
+  // Looping logic on index change
   useEffect(() => {
-    if (isSmallScreen) return;
+    const total = totalCards + 2;
 
-    if (index === totalCards + 2) {
+    if (index === total) {
       setTimeout(() => {
         setIsAnimating(false);
         setIndex(2);
@@ -75,8 +76,16 @@ const Clients = () => {
     } else {
       setIsAnimating(true);
     }
-  }, [index, totalCards, isSmallScreen]);
+  }, [index, totalCards]);
 
+  // Reset animation state after instant jump
+  useEffect(() => {
+    if (!isAnimating) {
+      setTimeout(() => setIsAnimating(true), 50);
+    }
+  }, [isAnimating]);
+
+  // Drag/swipe handlers
   const handleMouseDown = (e) => {
     isDragging.current = true;
     startX.current = e.pageX || e.touches[0].pageX;
@@ -106,6 +115,7 @@ const Clients = () => {
     currentTranslate.current = 0;
   };
 
+  // Attach event listeners
   useEffect(() => {
     const container = containerRef.current;
     container.addEventListener('mousedown', handleMouseDown);
@@ -136,9 +146,10 @@ const Clients = () => {
         <div className="slider-window">
           <div
             ref={wrapperRef}
-            className={`cards-wrapper ${isAnimating ? 'animate' : ''}`}
+            className="cards-wrapper"
             style={{
               transform: `translateX(-${index * 22}vw)`,
+              transition: isAnimating ? 'transform 0.6s ease-in-out' : 'none',
             }}
           >
             {extendedCards.map((text, i) => (
