@@ -26,7 +26,10 @@
     object-fit: cover;
     z-index: 0; /* Lowest layer */
   }
-  
+  #homebg::-webkit-media-controls {
+    display: none !important;
+  }
+
   /* Dark overlay on top of the video */
   .overlay {
     position: absolute;
