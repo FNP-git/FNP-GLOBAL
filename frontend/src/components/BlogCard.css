@@ -46,6 +46,8 @@
   
   .read-more-btn:hover {
     background-color: #00b7ff;
+    color: black;
+    font-weight: 600;
   }
   @media (max-width: 768px){
     .blog-card{

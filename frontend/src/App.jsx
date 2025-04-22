@@ -5,6 +5,7 @@ import BlogPage from './pages/BlogPage'
 import Contact from './pages/Contact'
 import { Routes, Route } from 'react-router-dom'
 import CustomCursor from './components/CustomCursor'
+import BlogDetail from './pages/BlogDetail'
 import ScrollToTop from './components/ScrollToTop'
 
 const App = () => {
@@ -31,6 +32,7 @@ const App = () => {
         <Route path="/about" element={<About />} />
         <Route path="/blogs" element={<BlogPage />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/blog/:id" element={<BlogDetail />} />
       </Routes>
     </>
   )

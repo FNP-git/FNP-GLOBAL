@@ -57,7 +57,8 @@
   }
   
   .fullcard-btn:hover {
-    background-color: #003366;
+    background-color: #00b7ff;
+    color: black;
   }
   #para{
     width: 60%;

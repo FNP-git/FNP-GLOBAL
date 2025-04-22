@@ -28,8 +28,6 @@ const Footer = () => {
             <li><NavLink to="/about">About Us</NavLink></li>
             <li><NavLink to="/blogs">Blog</NavLink></li>
             <li><NavLink to="/contact">Contact Us</NavLink></li>
-            <li>Refund Policy {/* Add NavLink when route is ready */}</li>
-            <li>Shipping Policy {/* Add NavLink when route is ready */}</li>
           </ul>
         </div>
 
