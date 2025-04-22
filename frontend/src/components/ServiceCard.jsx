@@ -10,15 +10,13 @@ const ServiceCard = ({ bgImage, label }) => {
   };
 
   return (
-    <div
+    <button
       className="service-card"
       style={{ backgroundImage: `url(${bgImage})` }}
       onClick={handleClick}
     >
-      <div className="service-card__label">
-        {label}
-      </div>
-    </div>
+      <div className="service-card__label">{label}</div>
+    </button>
   );
 };
 

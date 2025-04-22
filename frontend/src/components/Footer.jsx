@@ -69,7 +69,7 @@ const Footer = () => {
               <img src={canada} alt="canada" />
               <span>Canada's Address</span>
             </div>
-            <p>287 Grove St Worcester, MA 01605</p>
+            <p>55 Village Centre PI Suite #200, Mississauga, ON L4Z 1V9, Canada</p>
           </div>
 
           <div className="address-line">

@@ -30,8 +30,8 @@ html , body{
     position: absolute;
     object-fit: cover;
     width: 100%;
-    opacity: 0.5;
-    z-index: 5;
+    opacity: 0.9;
+    z-index: 0;
 }
 .services-grid {
     display: grid;
@@ -59,8 +59,9 @@ html , body{
     position: absolute;
     object-fit: cover;
     width: 100%;
-    opacity: 0.5;
+    opacity: 1;
     top: 350%;
+    z-index: 1;
   }
   .lrn{
     background-color: transparent;
