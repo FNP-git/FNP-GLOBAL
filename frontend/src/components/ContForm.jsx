@@ -67,7 +67,7 @@ const ContForm = () => {
     };
 
     try {
-      const API_BASE_URL = `${window.location.protocol}//fnpglobal.com`;
+      const API_BASE_URL = `${window.location.origin}`;
 
       const response = await fetch(`${API_BASE_URL}/api/form`, {
       method: "POST",
