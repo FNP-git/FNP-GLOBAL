@@ -67,11 +67,14 @@ const ContForm = () => {
     };
 
     try {
-      const response = await fetch("http://localhost:5000/api/form", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(payload),
+      const API_BASE_URL = `${window.location.protocol}//fnpglobal.com`;
+
+      const response = await fetch(`${API_BASE_URL}/api/form`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(payload),
       });
+
 
       const resData = await response.json();
 

@@ -111,8 +111,3 @@ html, body {
     height: 90vh;
   }
 }
-@media (max-width: 426px){
-  #wlcm{
-    max-height: ;
-  }
-}
