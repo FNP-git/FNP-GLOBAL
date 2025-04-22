@@ -1,58 +1,61 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-html , body{
-    height: 100%;
-    width: 100%;
-}
 .service-card {
-    position: relative;
-    width: 25vw;         
-    height: 35vh;         
-    border-radius: 30px;   
-    background-size: cover;
-    background-position: center;
-    overflow: hidden;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-    display: flex;
-    align-items: flex-end;
+  position: relative;
+  width: 25vw;
+  height: 35vh;
+  border-radius: 30px;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  display: flex;
+  align-items: flex-end;
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  z-index: 5;
+}
+
+.service-card:focus {
+  outline: none;
+}
+
+.service-card__label {
+  width: 100%;
+  padding: 2.5rem 0.75rem;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.1) 0%,
+    rgba(0, 0, 0, 0.25) 25%,
+    rgba(0, 0, 0, 0.50) 50%,
+    rgba(0, 0, 0, 0.75) 75%,
+    rgba(0, 0, 0, 0.95) 100%
+  );
+  color: #fff;
+  font-size: 1.125rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.service-card:hover {
+  transform: scale(1.13);
+  transition: transform 0.3s ease;
+}
+
+@media screen and (max-width: 768px) {
+  .service-card {
+    width: 85% !important;
   }
-  
-  .service-card__label {
-    width: 100%;
-    padding: 2.5rem 0.75rem;  /* slightly reduced vertical and horizontal padding */
-    background: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0.1) 0%,
-      rgba(0, 0, 0, 0.25) 25%,
-      rgba(0, 0, 0, 0.50) 50%,
-      rgba(0, 0, 0, 0.75) 75%,
-      rgba(0, 0, 0, 0.95) 100%
-    );
-    color: #fff;
-    font-size: 1.125rem;
-    font-weight: 600;
-    text-align: center;
+}
+
+@media screen and (max-width: 1024px) {
+  .service-card {
+    width: 22rem;
   }
-  
-  .service-card:hover {
-    transform: scale(1.13);  /* slightly increased scale on hover */
-    transition: transform 0.3s ease;
+}
+
+@media screen and (max-width: 426px) {
+  .service-card {
+    width: 70vw;
   }
-  @media screen and (max-width: 768px){
-    .service-card {
-      width: 85% !important;
-    }
-  }
-  @media screen and (max-width: 1024px){
-    .service-card {
-      width: 22rem;
-    }
-  }
-  @media screen and (max-width: 426px){
-    .service-card {
-      width: 70vw;
-    }
-  }
+}
