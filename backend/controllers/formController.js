@@ -7,7 +7,7 @@ exports.handleFormSubmission = async (req, res) => {
     return res.status(400).json({ errors: errors.array() });
   }
 
-  const { name, email, message } = req.body;
+  const { name, email, phone, message } = req.body;
 
   try {
     const transporter = nodemailer.createTransport({
@@ -28,7 +28,9 @@ exports.handleFormSubmission = async (req, res) => {
              <hr style="border:1px solid #ccc; margin:10px 0;" />
              <p><strong>Name:</strong> ${name}</p>
              <p><strong>Email:</strong> ${email}</p>
-             <p><strong>Message:</strong> ${message.replace(/\n/g, '<br>')}</p>`
+             <p><strong>Phone:</strong> ${phone}</p>
+             <p><strong>Message:</strong> ${message.replace(/\n/g, '<br>')}</p>
+`
     });
 
     res.status(200).json({ message: 'Form submitted successfully' });

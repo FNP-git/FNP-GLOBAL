@@ -63,8 +63,10 @@ const ContForm = () => {
     const payload = {
       name: `${formData.firstName} ${formData.lastName}`.trim(),
       email: formData.email,
-      message: `Phone: ${formData.phone}\n\n${formData.message}`,
+      phone: formData.phone,
+      message: formData.message,
     };
+    
 
     try {
       const API_BASE_URL = `${window.location.origin}`;
