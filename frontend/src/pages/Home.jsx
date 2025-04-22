@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import './Home.css'
 import vid from '../assets/homevid.mp4'
 import Header from '../components/Header'
@@ -16,6 +16,24 @@ import { useNavigate } from 'react-router-dom'
 
 const Home = () => {
   const navigate = useNavigate();
+  const videoRef = useRef(null);
+
+  useEffect(() => {
+    const video = videoRef.current;
+
+    const handlePageShow = () => {
+      if (video) {
+        video.style.display = 'none';
+        setTimeout(() => {
+          video.style.display = 'block';
+          video.play().catch(() => {});
+        }, 10);
+      }
+    };
+
+    window.addEventListener('pageshow', handlePageShow);
+    return () => window.removeEventListener('pageshow', handlePageShow);
+  }, []);
 
   return (
     <>
@@ -43,8 +61,18 @@ const Home = () => {
             <img id='scr' src={arrow} alt="Scroll Down" />
           </div>
         </div>
+
         <div className="overlay"></div>
-        <video id='homebg' src={vid} autoPlay muted loop preload="auto"></video>
+        <video
+          id='homebg'
+          ref={videoRef}
+          src={vid}
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="auto"
+        />
       </div>
 
       <Welcome />
