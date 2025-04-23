@@ -22,6 +22,7 @@ import DoCard from '../components/DoCard'
 import Footer from '../components/Footer'
 import Global from './Global'
 import praxxi from '../assets/praxxi.png'
+import lizi from '../assets/lizi.png'
 
 
 
@@ -65,7 +66,7 @@ const About = () => {
               </div>
               <div id="directors2">
                     <DirCard
-                  image={img2}
+                  image={lizi}
                   name="Elizabeth Mary"
                   position="Additional Director"
                 />
