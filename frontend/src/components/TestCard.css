@@ -63,7 +63,7 @@
           font-weight: 300;
         }
   }
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 1024px) {
     .testcard {
       flex: 0 0 60vw; /* show 1 card fully, one peeking */
       height: clamp(10rem, 30rem, 20rem);

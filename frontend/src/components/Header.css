@@ -60,7 +60,7 @@
   }
   
   /* hide desktop menu on small screens */
-  @media (max-width: 835px) {
+  @media (max-width: 1024px) {
     #menu {
       display: none;
     }

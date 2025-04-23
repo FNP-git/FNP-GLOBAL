@@ -94,7 +94,7 @@ html, body {
   text-align: center;
   max-width: 50%;
 }
-@media (max-width: 624px){
+@media (max-width: 1024px){
   #wlc-head{
     font-size: 4vh;
     margin-bottom: 1.7vh;

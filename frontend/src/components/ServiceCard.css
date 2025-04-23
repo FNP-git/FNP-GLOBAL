@@ -51,6 +51,10 @@
 @media screen and (max-width: 1024px) {
   .service-card {
     width: 22rem;
+    height: 28vh;
+  }
+  .service-card__label {
+    font-size: 1.6rem;
   }
 }
 

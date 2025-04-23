@@ -16,12 +16,8 @@ html , body{
     transform: translate(-50%, -50%); /* Adjust for height and width */
     overflow: hidden;
 }
-@media (max-width: 680px){
-    #blr {
-        top: 90%;
-    }
-}
-@media (max-width: 480px){
+
+@media (max-width: 1024px){
     #blr{
         display: none;
     }
