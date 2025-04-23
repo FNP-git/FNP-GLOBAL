@@ -79,7 +79,7 @@ const About = () => {
               <div id="st-para">At FNP Global, we believe in turning challenges into opportunities and ideas into thriving businesses. Our journey began with a vision—to empower businesses worldwide with strategic solutions, expert guidance, and innovative thinking. <br />
 Founded by a team of seasoned professionals with deep industry insights, we recognized a gap in the market: businesses needed more than just advice; they needed a partner who could walk with them through every step of their journey. That’s where we come in. <br />
 From startups taking their first leap to established enterprises seeking expansion, we provide tailored consultancy services that drive growth, efficiency, and success. With a global network and a commitment to excellence, we don’t just consult—we create transformation. <br />
-At FNP Global Business Consultancy, your success is our mission. Let’s build the future, together.</div>
+At FNP Global, your success is our mission. Let’s build the future, together.</div>
             </div>
             <div className="team">
               <h1 id='tm-head'>MEET THE TEAM</h1>
@@ -114,7 +114,7 @@ At FNP Global Business Consultancy, your success is our mission. Let’s build t
             </div>
             <WhoCard
             title1="Who We Are"
-            desc1="FNP Global is a leading business consultancy firm dedicated to transforming challenges into opportunities. Our team comprises seasoned professionals, industry experts, and visionary strategists who bring a wealth of experience across multiple sectors. We believe in fostering long-term partnerships with our clients by delivering tailor-made solutions that align with their unique business goals."
+            desc1="FNP Global is a leading business firm dedicated to transforming challenges into opportunities. Our team comprises seasoned professionals, industry experts, and visionary strategists who bring a wealth of experience across multiple sectors. We believe in fostering long-term partnerships with our clients by delivering tailor-made solutions that align with their unique business goals."
             image1={wholeft}
             title2="Our Mission"
             desc2="We are committed to driving business excellence by providing cutting-edge consulting services that enhance operational efficiency, optimize performance, and ensure sustainable growth. Our mission is to help businesses navigate the complexities of the global market with confidence and agility."
