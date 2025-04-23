@@ -59,7 +59,7 @@ const Footer = () => {
               <img src={usa} alt="usa" />
               <span>USA's Address</span>
             </div>
-            <p>287 Grove St Worcester, MA 01605</p>
+            <p>287 Grove St Worcester, <br /> MA 01605</p>
           </div>
 
           <div className="address-line">
@@ -67,7 +67,7 @@ const Footer = () => {
               <img src={canada} alt="canada" />
               <span>Canada's Address</span>
             </div>
-            <p>55 Village Centre PI Suite #200, Mississauga, ON L4Z 1V9, Canada</p>
+            <p>55 Village Centre PI Suite #200, <br /> Mississauga, ON L4Z 1V9, Canada</p>
           </div>
 
           <div className="address-line">
@@ -75,7 +75,7 @@ const Footer = () => {
               <img src={india} alt="india" />
               <span>India's Registered Address</span>
             </div>
-            <p>7/160, Bans Mandi, Bansmandi, Sarai Babu, Aligarh, Uttar Pradesh 202001</p>
+            <p>7/160, Bans Mandi, Bansmandi, Sarai Babu, <br /> Aligarh, Uttar Pradesh 202001</p>
           </div>
 
           <div className="address-line">
@@ -83,7 +83,7 @@ const Footer = () => {
               <img src={india} alt="india" />
               <span>India’s Corporate Address</span>
             </div>
-            <p>3rd Floor, Skymark Building, F-01, F Block, Sector 6, Noida, Uttar Pradesh 201301</p>
+            <p>3rd Floor,Skymark Building,F-01, <br /> F Block, Sector 6, Noida, UP 201301</p>
           </div>
         </div>
       </div>
