@@ -17,8 +17,8 @@
   }
   
   .team-img-wrapper {
-    width: 5rem;
-    height: 5rem;
+    width: 6.5rem;
+    height: 6.5rem;
     border-radius: 50%;
     overflow: hidden;
     margin: 0 auto 1.5rem;
@@ -89,4 +89,7 @@
     .team-card {
       width: 55vw;
     }
+    .team-img-wrapper {
+      width: 6rem;
+      height: 6rem;}
   }

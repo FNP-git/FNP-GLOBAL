@@ -7,7 +7,7 @@ import DirCard from '../components/DirCard'
 import anshul from '../assets/anshul.png'
 import prateek from '../assets/prateek.png'
 import frank from '../assets/frank.png'
-import lizi from '../assets/lizi.png'
+import img2 from '../assets/img2.png'
 import pranjal from '../assets/pranjal.png'
 import dennis from '../assets/dennis.png'
 import freddy from '../assets/freddy.png'
@@ -21,6 +21,7 @@ import whatWeDoImg from '../assets/Do.svg'
 import DoCard from '../components/DoCard'
 import Footer from '../components/Footer'
 import Global from './Global'
+import praxxi from '../assets/praxxi.png'
 
 
 
@@ -52,9 +53,9 @@ const About = () => {
                   position="Founder & CEO"
                 />
                 <DirCard
-                  image={anshul}
-                  name="Narendra"
-                  position="Managing Director"
+                  image={img2}
+                  name="Narendra M Nagalla"
+                  position="Co-Founder"
                 />
                 <DirCard
                   image={prateek}
@@ -64,13 +65,13 @@ const About = () => {
               </div>
               <div id="directors2">
                     <DirCard
-                  image={lizi}
+                  image={img2}
                   name="Elizabeth Mary"
                   position="Additional Director"
                 />
                 <DirCard
-                  image={anshul}
-                  name="Pratiksha"
+                  image={praxxi}
+                  name="Pratiksha Varshney"
                   position="Additional Director"
                 />
               </div>

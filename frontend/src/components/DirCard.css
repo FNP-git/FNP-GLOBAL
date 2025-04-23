@@ -19,7 +19,6 @@
   width: 9rem;
   height: 9rem;
   margin: 0 auto 1.5rem;
-  border: 0.3rem solid #19d3ff;
   border-radius: 50%;
   overflow: hidden;
 }
@@ -31,7 +30,7 @@
 }
 
 .dir-card-name {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   color: #4fc3f7;
   font-weight: bold;
 }
@@ -62,6 +61,11 @@
 
   .dir-card-position {
     font-size: 0.85rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .dir-card-name {
+    font-size: 0.9rem;
   }
 }
 
