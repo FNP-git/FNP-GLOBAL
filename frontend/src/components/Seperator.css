@@ -21,7 +21,7 @@ html , body{
         top: 90%;
     }
 }
-@media (max-width: 425px){
+@media (max-width: 480px){
     #blr{
         display: none;
     }

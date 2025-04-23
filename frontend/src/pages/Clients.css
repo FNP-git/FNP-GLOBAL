@@ -88,7 +88,7 @@
       height: 80%;
     }
   }
-  @media screen and (max-width: 426px) {
+  @media screen and (max-width: 480px) {
     .clients-container{
       height: clamp(20rem, 30rem, 20rem);
     }

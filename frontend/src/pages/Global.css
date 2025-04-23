@@ -36,7 +36,7 @@ html , body{
     height: 70vh;
    }
 }
-@media screen and (max-width: 426px){
+@media screen and (max-width: 480px){
 #map{
     max-width: 90%;
     margin-top: 2vh;

@@ -54,7 +54,7 @@
     color: #C9F7FF;
     line-height: 1.6;
   }
-  @media screen and (max-width:426px){
+  @media screen and (max-width:480px){
     .contact-head {
       font-size: 3vh;
     }

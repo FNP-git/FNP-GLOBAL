@@ -68,7 +68,7 @@
       width: 83vw;
     }
   }
-  @media screen and (max-width: 426px){
+  @media screen and (max-width: 480px){
     .do-heading{
       font-size: 2rem;
     }

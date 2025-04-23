@@ -88,7 +88,7 @@
     font-size: 0.8rem;
   }
 }
-@media screen and (max-width: 426px){
+@media screen and (max-width: 480px){
   .dir-card-img {
     width: 7rem;
     height: 7rem;

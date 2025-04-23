@@ -54,7 +54,7 @@
       width: 80% !important;
     }
   }
-  @media (max-width: 426px){
+  @media (max-width: 480px){
     .blog-card{
       width: 60vw !important;
       height: clamp(10rem, 30rem, 20rem);

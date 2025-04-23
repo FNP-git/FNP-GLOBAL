@@ -144,7 +144,7 @@
     }
     
   }
-  @media (max-width: 426px){
+  @media (max-width: 480px){
     .blog-card-container {
       flex: 0 0 calc(40%);
       margin-right: 4vh;

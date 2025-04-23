@@ -98,7 +98,7 @@
     width: 150px;
   }
 }
-@media screen and (max-width: 426px) {
+@media screen and (max-width:480px) {
   .who-wrapper{
     flex-direction: column;
   }

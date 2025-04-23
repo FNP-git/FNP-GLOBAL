@@ -121,7 +121,7 @@
       flex-direction: column;
     }
   }
-  @media screen and (max-width: 426px){
+  @media screen and (max-width: 480px){
     .contact-container{
       padding: 4vh 2vw;
       max-width: 90vw;

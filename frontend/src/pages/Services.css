@@ -93,7 +93,7 @@ html , body{
       text-overflow: ellipsis;
     }
   }
-  @media (max-width: 426px){
+  @media (max-width: 480px){
     #serv-head2{
       margin-top: 10vh;
       white-space: nowrap;
@@ -118,4 +118,6 @@ html , body{
       height: 350vh;
     }
   }
-  
+  @media screen and (max-width: 480px) {
+
+  }
