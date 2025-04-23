@@ -21,7 +21,7 @@ const Contact = () => {
         <img src={abtlogo} alt="contact-logo" id="contact-logo" />
         <div className="contact-content">
           <p id="contact-para">
-            At FNP Global Business Consultancy, we are more than just consultants—we are strategic
+            At FNP Global, we are more than just consultants, we are strategic
             partners in your business success. With a strong global presence and deep industry
             expertise, we specialize in empowering businesses with innovative solutions, insightful
             strategies, and sustainable growth models.
