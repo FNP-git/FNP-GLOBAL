@@ -33,12 +33,21 @@ const Footer = () => {
 
         <div className="footer-section footer-contact-section">
           <div className="contact-block">
-            <h3><FaPhoneAlt /> Contact Number(USA)</h3>
+            <h3><FaPhoneAlt /> Contact Number</h3>
+            <div id="ph1">
+            <img src={usa} alt="usa" />
             <a href="tel:+15082296373">+1-508-229-6373</a>
-            <h3><FaPhoneAlt /> Contact Number(Canada)</h3>
+            </div>
+            <div id="ph1">
+            <img src={canada} alt="canada" />
+
             <a href="tel:+15082296343">+1-508-229-6343</a>
-            <h3><FaPhoneAlt />Contact Number(India) </h3>
+            </div>
+            <div id="ph1">
+            <img src={india} alt="india" />
+
             <a href="tel:+919084732432">+91-908-473-2432</a>
+            </div>
           </div>
 
           <div className="contact-block">

@@ -103,7 +103,17 @@
   color: #ffffff;
   text-decoration: none;
 }
-
+.contact-block {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5vh;
+}
+#ph1{
+  display: flex;
+  justify-content: flex-start;
+  gap: 0.3vw;
+  align-items: center;
+}
 .contact-block .social-icons {
   display: flex;
   gap: 1rem;
