@@ -5,7 +5,7 @@ import './Seperator.css'
 const Seperator = () => {
   return (
     <div id='blr'>
-      <img src={blur} alt="seperator" />
+      <img src={blur} alt="seperator" loading="lazy" />
     </div>
   )
 }

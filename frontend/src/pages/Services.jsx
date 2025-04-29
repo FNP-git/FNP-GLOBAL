@@ -31,7 +31,7 @@ const Services = ({ showButton = true }) => {
           ))}
         </div>
 
-        <img id='mirror-bg' src={mirror} alt="choose bg" />
+        <img id='mirror-bg' src={mirror} alt="choose bg" loading="lazy" />
         <h1 id='serv-head2'>WHY CHOOSE US</h1>
 
         <BigCard number="01." title="GLOBAL EXPERTISE">

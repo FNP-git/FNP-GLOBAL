@@ -5,7 +5,7 @@ const DirCard = ({ image, name, position }) => {
   return (
     <div className="dir-card">
       <div className="dir-card-img">
-        <img src={image} alt={name} />
+        <img src={image} alt={name} loading="lazy" />
       </div>
       <h2 className="dir-card-name">{name}</h2>
       <p className="dir-card-position">{position}</p>

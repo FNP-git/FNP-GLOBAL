@@ -4,7 +4,7 @@ import './BlogCard.css';
 const BlogCard = ({ image, title, onClick }) => {
   return (
     <div className="blog-card">
-      <img src={image} alt="blog cover" className="blog-image" />
+      <img src={image} alt="blog cover" className="blog-image" loading="lazy" />
       <div className="blog-content">
         <h3>{title}</h3>
         <button className="read-more-btn" onClick={onClick}>

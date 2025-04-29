@@ -9,7 +9,7 @@ import ContForm from '../components/ContForm';
 const Contact = () => {
   return (
     <>
-      <img src={cntbg} alt="contact backgrround" id="contact-bg" />
+      <img src={cntbg} alt="contact backgrround" id="contact-bg" loading="lazy" />
       <Header />
       <div className="contact">
         <div className="contact-head">
@@ -18,7 +18,7 @@ const Contact = () => {
         <div className="contact-subhead">
           <h1>Finding Inspiration in Every Turn</h1>
         </div>
-        <img src={abtlogo} alt="contact-logo" id="contact-logo" />
+        <img src={abtlogo} alt="contact-logo" id="contact-logo" loading="lazy" />
         <div className="contact-content">
           <p id="contact-para">
             At FNP Global, we are more than just consultants, we are strategic

@@ -11,7 +11,7 @@ import Footer from '../components/Footer';
 const BlogPage = () => {
   return (
     <>
-      <img src={bg} alt="background" id="blogs-bg" />
+      <img src={bg} alt="background" id="blogs-bg" loading="lazy" />
       <Header />
       <div className="blogs">
         <div className="blogs-head">
@@ -20,7 +20,7 @@ const BlogPage = () => {
         <div className="blogs-subhead">
           <h1>Finding Inspiration in Every Turn</h1>
         </div>
-        <img src={abtlogo} alt="blog logo" id='blogs-logo' />
+        <img src={abtlogo} alt="blog logo" id='blogs-logo' loading="lazy" />
         <div className="blogs-content">
           <p id='blogs-para'>
           At FNP Global, we strive to provide insightful, up-to-date, and actionable content to help businesses navigate the complexities of the global market. Our blog covers a wide range of topics, from business strategy and market trends to financial management and regulatory compliance.
@@ -95,7 +95,7 @@ const BlogPage = () => {
     </div>
         </div>
         <div id="blog-right">
-            <img src={imgrt} alt="" id='bsns' />
+            <img src={imgrt} alt="" id='bsns' loading="lazy" />
         </div>
       </div>
       <Footer />

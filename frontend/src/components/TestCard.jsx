@@ -9,6 +9,7 @@ const TestCard = ({ text, name }) => {
         src={comma}
         alt="quote"
         className="quote-icon"
+        loading="lazy"
       />
       <p className="testimonial-text">"{text}"</p>
       <p className="testimonial-name">– {name}</p>

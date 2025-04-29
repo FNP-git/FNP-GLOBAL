@@ -29,7 +29,7 @@ import lizi from '../assets/lizi.png'
 const About = () => {
   return (
     <>
-        <img src={bg} alt="" id='abtbg' />
+        <img src={bg} alt="" id='abtbg' loading="lazy" />
         <Header/>
         <div className="abt">
             <div className="abt-head">
@@ -38,14 +38,14 @@ const About = () => {
             <div className="abt-subhead">
             <h1>Finding Inspiration in Every Turn</h1>
             </div>
-            <img src={abtlogo} alt="" id='abtlgo' />
+            <img src={abtlogo} alt="" id='abtlgo' loading="lazy" />
             <div className="abt-content">
             <p id='abt-para'>
             At FNP Global, we are more than just consultants, we are strategic partners in your business success. With a strong global presence and deep industry expertise, we specialize in empowering businesses with innovative solutions, insightful strategies, and sustainable growth models.
             </p>
             </div>
             <div className="story">
-              <img src={stbg} alt="" id='stbg' />
+              <img src={stbg} alt="" id='stbg' loading="lazy" />
               <h1 className="str-head">OUR STORY</h1>
               <div id="directors1">
                     <DirCard

@@ -35,16 +35,16 @@ const Footer = () => {
           <div className="contact-block">
             <h3><FaPhoneAlt /> Contact Numbers</h3>
             <div id="ph1">
-            <img src={usa} alt="usa" />
+            <img src={usa} alt="usa" loading="lazy" />
             <a href="tel:+15082296373">+1-508-229-6373</a>
             </div>
             <div id="ph1">
-            <img src={canada} alt="canada" />
+            <img src={canada} alt="canada" loading="lazy" />
 
             <a href="tel:+15082296343">+1-508-229-6343</a>
             </div>
             <div id="ph1">
-            <img src={india} alt="india" />
+            <img src={india} alt="india" loading="lazy" />
 
             <a href="tel:+919084732432">+91-908-473-2432</a>
             </div>
@@ -69,7 +69,7 @@ const Footer = () => {
           <h3><FaMapMarkerAlt /> Headquarters</h3>
           <div className="address-line">
             <div className="flag-label">
-              <img src={usa} alt="usa" />
+              <img src={usa} alt="usa" loading="lazy" />
               <span>USA's Address</span>
             </div>
             <p>287 Grove St Worcester, <br /> MA 01605</p>
@@ -77,7 +77,7 @@ const Footer = () => {
 
           <div className="address-line">
             <div className="flag-label">
-              <img src={canada} alt="canada" />
+              <img src={canada} alt="canada" loading="lazy" />
               <span>Canada's Address</span>
             </div>
             <p>55 Village Centre PI Suite #200, <br /> Mississauga, ON L4Z 1V9, Canada</p>
@@ -85,7 +85,7 @@ const Footer = () => {
 
           <div className="address-line">
             <div className="flag-label">
-              <img src={india} alt="india" />
+              <img src={india} alt="india" loading="lazy" />
               <span>India's Registered Address</span>
             </div>
             <p>7/160, Bans Mandi, Bansmandi, Sarai Babu, <br /> Aligarh, Uttar Pradesh 202001</p>
@@ -93,7 +93,7 @@ const Footer = () => {
 
           <div className="address-line">
             <div className="flag-label">
-              <img src={india} alt="india" />
+              <img src={india} alt="india" loading="lazy" />
               <span>India’s Corporate Address</span>
             </div>
             <p>3rd Floor,Skymark Building,F-01, <br /> F Block, Sector 6, Noida, UP 201301</p>

@@ -42,14 +42,14 @@ const Home = () => {
 
         <div id="main">
           <div id="cont1">
-            <img id='rectimg' src={rect} alt="" />
+            <img id='rectimg' src={rect} alt="" loading="lazy" />
             <h1 id='main-head'>DRIVEN BY <span id='tag'>TRUST</span>,</h1>
           </div>    
           <div id="cont2">
             <h1 id='main-head'>YOUR <span id='tag'>GROWTH</span> OUR <span id='tag'>STRATEGY</span></h1>
           </div>
           <div id="box">
-            <img id='bx' src={box} alt="" />
+            <img id='bx' src={box} alt="" loading="lazy" />
           </div>
           <div id="cont3">
             <h2 id='subhead'>Meet Your Business Consultants</h2>
@@ -58,7 +58,7 @@ const Home = () => {
             <button id='btn2' onClick={() => navigate('/contact')}>Get in touch</button>
           </div>
           <div>
-            <img id='scr' src={arrow} alt="Scroll Down" />
+            <img id='scr' src={arrow} alt="Scroll Down" loading="lazy" />
           </div>
         </div>
 

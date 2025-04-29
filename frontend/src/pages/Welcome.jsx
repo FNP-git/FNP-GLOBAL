@@ -6,7 +6,7 @@ const Welcome = () => {
   return (
     <>
       <div id="wlcm">
-        <img src={background} alt="" id='bg' />
+        <img src={background} alt="" id='bg' loading="lazy" />
         <h1 id='wlc-head'>WELCOME TO FNP GLOBAL</h1>
           <div class="headline-container" id="headlineCarousel">
             <h1 class="headline">FIDELITY</h1>

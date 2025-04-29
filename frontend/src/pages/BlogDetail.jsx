@@ -26,7 +26,7 @@ const BlogDetail = () => {
       <Header />
       <div className="blog-detail">
         <div className="blog-detail-container">
-          <img className="blog-detail-image" src={blog.image} alt={blog.title} />
+          <img className="blog-detail-image" src={blog.image} alt={blog.title} loading="lazy" />
           <h1 className="blog-detail-title">{blog.title}</h1>
           <div className="blog-detail-content">
             <p>{blog.content}</p>

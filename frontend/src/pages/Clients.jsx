@@ -58,7 +58,7 @@ const Clients = () => {
   return (
     <div id="client-main">
       <h1 id="client-head">WHAT OUR CLIENTS SAY</h1>
-      <img id="tstbg" src={testbg} alt="testimonials background" />
+      <img id="tstbg" src={testbg} alt="testimonials background" loading="lazy" />
       <div className="clients-container">
         {!isSmallScreen && (
           <button className="arrow-button left" onClick={handleScrollLeft}>‹</button>
