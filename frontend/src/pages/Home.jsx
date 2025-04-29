@@ -13,6 +13,7 @@ import Global from './Global'
 import Footer from '../components/Footer'
 import Blog from '../components/Blogs'
 import { useNavigate } from 'react-router-dom'
+import Brands from './Brands'
 
 const Home = () => {
   const navigate = useNavigate();
@@ -78,6 +79,7 @@ const Home = () => {
       <Welcome />
       <Seperator />
       <Services />
+      <Brands />
       <Clients />
       <Global />  
       <Blog />

@@ -47,10 +47,10 @@ html , body{
 }
 @media screen and (max-width: 320px){
     #global-head{
-        margin-top: 55vh;
+        margin-top: 10vh;
         font-size: 3.5vh;
     }
     #global-main{
-        height: 100vh;
+        height: 60vh;
     }
 }

@@ -115,9 +115,7 @@ html , body{
       font-size: 5vh;
     }
     #serv{
-      height: 350vh;
+      height: 370vh;
     }
   }
-  @media screen and (max-width: 480px) {
-
-  }
+  
