@@ -3,29 +3,37 @@ import Home from './pages/Home'
 import About from './pages/About'
 import BlogPage from './pages/BlogPage'
 import Contact from './pages/Contact'
+import BlogDetail from './pages/BlogDetail'
 import { Routes, Route } from 'react-router-dom'
 import CustomCursor from './components/CustomCursor'
-import BlogDetail from './pages/BlogDetail'
 import ScrollToTop from './components/ScrollToTop'
+import Loader from './components/Loader' // ✅ import the loader
 
 const App = () => {
   const [isMobile, setIsMobile] = useState(false)
+  const [loading, setLoading] = useState(true)
 
   useEffect(() => {
     const handleResize = () => {
       setIsMobile(window.innerWidth <= 768)
     }
-
-    handleResize() // Check screen size on initial load
+    handleResize()
     window.addEventListener('resize', handleResize)
-
-    // Cleanup event listener
     return () => window.removeEventListener('resize', handleResize)
   }, [])
 
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false)
+    }, 4000) // Adjust the duration as needed
+    return () => clearTimeout(timer)
+  }, [])
+
+  if (loading) return <Loader /> // ✅ show loader first
+
   return (
     <>
-      {!isMobile && <CustomCursor />} {/* Hide CustomCursor for screen size <= 768px */}
+      {!isMobile && <CustomCursor />}
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />

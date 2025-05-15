@@ -30,6 +30,27 @@
     display: none !important;
   }
 
+  .home-fade-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #16bbda;
+  z-index: 9998;
+  animation: fadeOutHome 2s ease-out forwards;
+}
+
+@keyframes fadeOutHome {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
   /* Dark overlay on top of the video */
   .overlay {
     position: absolute;

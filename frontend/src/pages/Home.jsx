@@ -39,6 +39,7 @@ const Home = () => {
   return (
     <>
       <div className="homepg">
+        <div className="home-fade-overlay"></div>
         <Header />
 
         <div id="main">
