@@ -1,12 +1,15 @@
 .brands-page {
     background-image: url('../assets/Frame100.svg');
     background-color: #011325;
+    background-repeat: no-repeat;
+    background-size: cover;
     padding: 40px 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     color: white;
   }
+  
   
   .clients-heading {
     font-size: 36px;
@@ -59,6 +62,10 @@
   .brand-logo {
     width: 14vw;
     height: auto;
+  }
+  .brand-logo:hover{
+    transform: scale(1.35);
+    transition: all 0.7s ease-out;
   }
   
   /* Mobile layout overrides */
