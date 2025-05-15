@@ -15,7 +15,7 @@ import Blog from '../components/Blogs'
 import { useNavigate } from 'react-router-dom'
 import Brands from './Brands'
 
-const Home = () => {
+const Home = ({ loading }) => {
   const navigate = useNavigate();
   const videoRef = useRef(null);
 
@@ -38,6 +38,8 @@ const Home = () => {
 
   return (
     <>
+    <div className={`homepg ${loading ? 'home-hidden' : 'home-visible'}`}>
+
       <div className="homepg">
         <div className="home-fade-overlay"></div>
         <Header />
@@ -76,7 +78,7 @@ const Home = () => {
           preload="auto"
         />
       </div>
-
+      </div>
       <Welcome />
       <Seperator />
       <Services />

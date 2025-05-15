@@ -40,6 +40,15 @@
   z-index: 9998;
   animation: fadeOutHome 2s ease-out forwards;
 }
+.home-hidden {
+  opacity: 0;
+  transition: opacity 0.4s ease-in;
+}
+
+.home-visible {
+  opacity: 1;
+  transition: opacity 0.6s ease-out;
+}
 
 @keyframes fadeOutHome {
   0% {
