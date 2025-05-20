@@ -1,13 +1,13 @@
 import React from 'react';
 import './Brands.css';
 
-import brand1 from '../assets/1Large.png';
+import brand1 from '../assets/1Large.svg';
 import brand2 from '../assets/2Large.png';
 import brand3 from '../assets/3Large.png';
 import brand4 from '../assets/4Large.png';
 import brand5 from '../assets/5Large.png';
 import brand6 from '../assets/6Large.png';
-import brand7 from '../assets/7Large.png';
+import brand7 from '../assets/7Large.svg';
 import brand8 from '../assets/8Large.png';
 
 const Brands = () => {
