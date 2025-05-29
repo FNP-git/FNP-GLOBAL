@@ -62,6 +62,7 @@
   .brand-logo {
     width: 8vw;
     height: auto;
+    z-index: 5;
   }
   .brand-logo:hover{
     transform: scale(1.35);
