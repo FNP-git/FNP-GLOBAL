@@ -22,8 +22,8 @@ const Brands = () => {
         {/* Desktop/Tablet layout */}
         <div className="desktop-layout">
           <div className="brands-row">
-            <img src={brand1} alt="Brand 1" className="brand-logo" />
-            <img src={brand2} alt="Brand 2" className="brand-logo" />
+            {/* <img src={brand1} alt="Brand 1" className="brand-logo" /> */}
+            {/* <img src={brand2} alt="Brand 2" className="brand-logo" /> */}
             <img src={brand3} alt="Brand 3" className="brand-logo" />
           </div>
 
@@ -45,8 +45,8 @@ const Brands = () => {
         {/* Mobile layout */}
         <div className="mobile-layout">
           <div className="brands-row">
-            <img src={brand1} alt="Brand 1" className="brand-logo" />
-            <img src={brand2} alt="Brand 2" className="brand-logo" />
+            {/* <img src={brand1} alt="Brand 1" className="brand-logo" /> */}
+            {/* <img src={brand2} alt="Brand 2" className="brand-logo" /> */}
           </div>
           <div className="brands-row">
             <img src={brand3} alt="Brand 3" className="brand-logo" />
