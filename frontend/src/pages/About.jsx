@@ -53,11 +53,7 @@ const About = () => {
                   name="Frank Parshu"
                   position="Founder & CEO"
                 />
-                <DirCard
-                  image={img2}
-                  name="Narendra M Nagalla"
-                  position="Co-Founder"
-                />
+                
                 <DirCard
                   image={prateek}
                   name="Prateek Varshney"
