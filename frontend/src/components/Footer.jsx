@@ -36,12 +36,12 @@ const Footer = () => {
             <h3><FaPhoneAlt /> Contact Numbers</h3>
             <div id="ph1">
             <img src={usa} alt="usa" loading="lazy" />
-            <a href="tel:+15082296373">+1-508-229-6373</a>
+            <a href="tel:+13513451129">+1-351-345-1129</a>
             </div>
             <div id="ph1">
             <img src={canada} alt="canada" loading="lazy" />
 
-            <a href="tel:+15082296343">+1-508-229-6343</a>
+            <a href="tel:+19783109977">+1-978-310-9977</a>
             </div>
             <div id="ph1">
             <img src={india} alt="india" loading="lazy" />
@@ -72,24 +72,24 @@ const Footer = () => {
               <img src={usa} alt="usa" loading="lazy" />
               <span>USA's Address</span>
             </div>
-            <p>287 Grove St Worcester, <br /> MA 01605</p>
+            <p>30N N Gould St Suite R, Sheridan, WY 82801</p>
           </div>
 
-          <div className="address-line">
+          {/* <div className="address-line">
             <div className="flag-label">
               <img src={canada} alt="canada" loading="lazy" />
               <span>Canada's Address</span>
             </div>
             <p>55 Village Centre PI Suite #200, <br /> Mississauga, ON L4Z 1V9, Canada</p>
-          </div>
+          </div> */}
 
-          <div className="address-line">
+          {/* <div className="address-line">
             <div className="flag-label">
               <img src={india} alt="india" loading="lazy" />
               <span>India's Registered Address</span>
             </div>
             <p>7/160, Bans Mandi, Bansmandi, Sarai Babu, <br /> Aligarh, Uttar Pradesh 202001</p>
-          </div>
+          </div> */}
 
           <div className="address-line">
             <div className="flag-label">
