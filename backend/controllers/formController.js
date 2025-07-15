@@ -33,7 +33,7 @@ exports.handleFormSubmission = async (req, res) => {
 `
     });
 
-    res.status(200).json({ message: 'Form submitted successfully' });
+    res.status(200).json({ message: 'Thank you for contacting [company name], our team will get in touch with you shortly' });
 
   } catch (err) {
     console.error(err);

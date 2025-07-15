@@ -15,9 +15,17 @@ router.post(
     body('email')
       .isEmail().withMessage('Valid email is required'),
 
+    body('phone')
+      .notEmpty().withMessage('Phone number is required')
+      .matches(/^[0-9]{10}$/).withMessage('Phone must be exactly 10 digits'),
+
     body('message')
+      .optional()
       .isLength({ max: 2000 }).withMessage('Message must be less than 2000 characters'),
 
+    body('smsConsent')
+      .isBoolean().withMessage('SMS consent must be a boolean value')
+      .equals('true').withMessage('You must agree to receive SMS messages to proceed')
   ],
   handleFormSubmission
 );
