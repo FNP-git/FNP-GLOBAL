@@ -7,6 +7,8 @@ import BlogDetail from './pages/BlogDetail'
 import { Routes, Route } from 'react-router-dom'
 import CustomCursor from './components/CustomCursor'
 import ScrollToTop from './components/ScrollToTop'
+import Terms from './pages/Terms'
+import Privacy from './pages/Privacy'
 import Loader from './components/Loader'
 
 const App = () => {
@@ -39,6 +41,8 @@ const App = () => {
         <Route path="/about" element={<About />} />
         <Route path="/blogs" element={<BlogPage />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/terms-conditions" element={<Terms />} />
+        <Route path="/privacy" element={<Privacy />} />
         <Route path="/blog/:id" element={<BlogDetail />} />
       </Routes>
     </>

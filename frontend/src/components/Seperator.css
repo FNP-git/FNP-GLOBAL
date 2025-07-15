@@ -16,9 +16,9 @@ html , body{
     transform: translate(-50%, -50%); /* Adjust for height and width */
     overflow: hidden;
 }
-
 @media (max-width: 1024px){
     #blr{
         display: none;
     }
 }
+

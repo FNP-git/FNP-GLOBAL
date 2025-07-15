@@ -28,6 +28,8 @@ const Footer = () => {
             <li><NavLink to="/about">About Us</NavLink></li>
             <li><NavLink to="/blogs">Blog</NavLink></li>
             <li><NavLink to="/contact">Contact Us</NavLink></li>
+            <li><NavLink to="/privacy">Privacy Policy</NavLink></li>
+            <li><NavLink to="/terms-conditions">Terms and Conditions</NavLink></li>
           </ul>
         </div>
 

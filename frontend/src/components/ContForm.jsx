@@ -9,6 +9,7 @@ const ContForm = () => {
     phone: "",
     email: "",
     message: "",
+    smsConsent: false, // Added for SMS consent checkbox
   });
 
   const [errors, setErrors] = useState({});
@@ -41,12 +42,21 @@ const ContForm = () => {
       newErrors.message = "Message must be less than 2000 characters.";
     }
 
+    // Mandatory SMS consent validation
+    if (!formData.smsConsent) {
+      newErrors.smsConsent = "You must agree to receive SMS messages to proceed.";
+    }
+
     return newErrors;
   };
 
   const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.id]: e.target.value });
-    setErrors({ ...errors, [e.target.id]: "" });
+    const { id, value, type, checked } = e.target;
+    setFormData({ 
+      ...formData, 
+      [id]: type === 'checkbox' ? checked : value 
+    });
+    setErrors({ ...errors, [id]: "" });
   };
 
   const handleSubmit = async (e) => {
@@ -65,6 +75,7 @@ const ContForm = () => {
       email: formData.email,
       phone: formData.phone,
       message: formData.message,
+      smsConsent: formData.smsConsent,
     };
     
 
@@ -76,7 +87,6 @@ const ContForm = () => {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(payload),
       });
-
 
       const resData = await response.json();
 
@@ -93,9 +103,12 @@ const ContForm = () => {
         phone: "",
         email: "",
         message: "",
+        smsConsent: false,
       });
       setErrors({});
-      alert("Message sent successfully!");
+      
+      // Updated success message as per compliance requirements
+      alert("Thank you for contacting FNP Global, our team will get in touch with you shortly");
 
     } catch (error) {
       console.error(error);
@@ -108,15 +121,12 @@ const ContForm = () => {
       <div className="contact-left">
         <h1 className="contact-heading">Say Hello!</h1>
         <p className="contact-text">
-          At FNP Global, We’re Always Ready To Help You Take The Next Step In
+          At FNP Global, We're Always Ready To Help You Take The Next Step In
           Your Business Journey. Whether You Have A Question, Need Expert
-          Guidance, Or Looking For A Strategic Partner, We’re Just A Call Away.
+          Guidance, Or Looking For A Strategic Partner, We're Just A Call Away.
           <br />
-          Reach Out To Us Today—We’d Love To Hear From You! Let’s Collaborate,
+          Reach Out To Us Today—We'd Love To Hear From You! Let's Collaborate,
           Innovate, And Build Success Together.
-        </p>
-        <p className="contact-info">
-          <strong>Phone:</strong> +1 888-807-9696
         </p>
         <p className="contact-info">
           <strong>Email :</strong> info@fnpglobal.com
@@ -194,6 +204,28 @@ const ContForm = () => {
               onChange={handleChange}
             ></textarea>
           </div>
+          
+          {/* SMS Consent Checkbox - MANDATORY for compliance */}
+          <div className="form-group checkbox-group">
+            <label className="checkbox-label">
+              <input
+                type="checkbox"
+                id="smsConsent"
+                checked={formData.smsConsent}
+                onChange={handleChange}
+                className="checkbox-input"
+              />
+              <span className="checkbox-text">
+                By providing your phone number, you agree to receive a text message from FNP Global. 
+                Message and Data rates may apply, Message frequency varies. To stop receiving messages, 
+                reply 'STOP' at any time. For more information, reply 'HELP'. 
+                <a href="/privacy-policy" target="_blank" rel="noopener noreferrer">Privacy Policy</a> & 
+                <a href="/terms-conditions" target="_blank" rel="noopener noreferrer">Terms & Conditions</a> *
+              </span>
+            </label>
+            {errors.smsConsent && <span className="error-message">{errors.smsConsent}</span>}
+          </div>
+
           <button type="submit" className="submit-button">
             Send
           </button>
