@@ -94,12 +94,8 @@ At FNP Global, your success is our mission. Let’s build the future, together.<
                 dep="(Sales)"
               /></div>
               <div id='tm1'>
-                <Team 
-                image={pranjal}
-                name="PRANJAL PUJARI"
-                position="Team Lead"
-                dep="(Backend)"
-              /><Team 
+                
+              <Team 
                 image={dennis}
                 name="STANLEY VICTOR"
                 position="Vice-President"
