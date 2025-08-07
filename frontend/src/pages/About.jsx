@@ -77,7 +77,7 @@ Founded by a team of seasoned professionals with deep industry insights, we reco
 From startups taking their first leap to established enterprises seeking expansion, we provide tailored consultancy services that drive growth, efficiency, and success. With a global network and a commitment to excellence, we don’t just consult—we create transformation. <br />
 At FNP Global, your success is our mission. Let’s build the future, together.</div>
             </div>
-            <div className="team">
+           {/* <div className="team">
               <h1 id='tm-head'>MEET THE TEAM</h1>
               <div id="tm-list">
                 <div id='tm1'>
@@ -103,7 +103,7 @@ At FNP Global, your success is our mission. Let’s build the future, together.<
               />
               </div>
               </div>
-            </div>
+            </div>*/}
             <WhoCard
             title1="Who We Are"
             desc1="FNP Global is a leading business firm dedicated to transforming challenges into opportunities. Our team comprises seasoned professionals, industry experts, and visionary strategists who bring a wealth of experience across multiple sectors. We believe in fostering long-term partnerships with our clients by delivering tailor-made solutions that align with their unique business goals."
