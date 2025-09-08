@@ -207,7 +207,7 @@ const ContForm = () => {
           
           {/* SMS Consent Checkbox - MANDATORY for compliance */}
           <div className="form-group checkbox-group">
-            <label className="checkbox-label">
+            {/* <label className="checkbox-label">
               <input
                 type="checkbox"
                 id="smsConsent"
@@ -222,7 +222,7 @@ const ContForm = () => {
                 <a href="/privacy-policy" target="_blank" rel="noopener noreferrer">Privacy Policy</a> & 
                 <a href="/terms-conditions" target="_blank" rel="noopener noreferrer">Terms & Conditions</a> *
               </span>
-            </label>
+            </label> */}
             {errors.smsConsent && <span className="error-message">{errors.smsConsent}</span>}
           </div>
 
