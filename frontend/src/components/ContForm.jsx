@@ -42,11 +42,6 @@ const ContForm = () => {
       newErrors.message = "Message must be less than 2000 characters.";
     }
 
-    // Mandatory SMS consent validation
-    // if (!formData.smsConsent) {
-    //   newErrors.smsConsent = "You must agree to receive SMS messages to proceed.";
-    // }
-
     return newErrors;
   };
 
@@ -206,8 +201,8 @@ const ContForm = () => {
           </div>
           
           {/* SMS Consent Checkbox - MANDATORY for compliance */}
-          <div className="form-group checkbox-group">
-            {/* <label className="checkbox-label">
+          {/* <div className="form-group checkbox-group">
+             <label className="checkbox-label">
               <input
                 type="checkbox"
                 id="smsConsent"
@@ -222,9 +217,9 @@ const ContForm = () => {
                 <a href="/privacy-policy" target="_blank" rel="noopener noreferrer">Privacy Policy</a> & 
                 <a href="/terms-conditions" target="_blank" rel="noopener noreferrer">Terms & Conditions</a> *
               </span>
-            </label> */}
+            </label> 
             {errors.smsConsent && <span className="error-message">{errors.smsConsent}</span>}
-          </div>
+          </div> */}
 
           <button type="submit" className="submit-button">
             Send
