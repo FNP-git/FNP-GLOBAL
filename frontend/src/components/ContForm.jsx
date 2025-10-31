@@ -13,7 +13,7 @@ const ContForm = () => {
   });
 
   const [errors, setErrors] = useState({});
-  const [submitted, setSubmitted] = useState(false);
+  const [_submitted, setSubmitted] = useState(false);
 
   const validate = () => {
     const newErrors = {};
@@ -43,9 +43,9 @@ const ContForm = () => {
     }
 
     // Mandatory SMS consent validation
-    if (!formData.smsConsent) {
-      newErrors.smsConsent = "You must agree to receive SMS messages to proceed.";
-    }
+    // if (!formData.smsConsent) {
+    //   newErrors.smsConsent = "You must agree to receive SMS messages to proceed.";
+    // }
 
     return newErrors;
   };

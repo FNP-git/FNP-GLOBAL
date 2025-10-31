@@ -11,10 +11,12 @@ exports.handleFormSubmission = async (req, res) => {
 
   try {
     const transporter = nodemailer.createTransport({
-      service: 'gmail', // ✅ use Gmail service
+      host: 'smtp.zoho.in',
+      port: 465,
+      secure: true,
       auth: {
         user: process.env.MAIL_USER,
-        pass: process.env.MAIL_PASS,
+        pass: process.env.MAIL_PASS, 
       },
     });
 

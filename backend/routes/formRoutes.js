@@ -22,10 +22,6 @@ router.post(
     body('message')
       .optional()
       .isLength({ max: 2000 }).withMessage('Message must be less than 2000 characters'),
-
-    body('smsConsent')
-      .isBoolean().withMessage('SMS consent must be a boolean value')
-      .equals('true').withMessage('You must agree to receive SMS messages to proceed')
   ],
   handleFormSubmission
 );

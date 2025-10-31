@@ -7,7 +7,7 @@ const app = express();
 
 // Middleware
 const corsOptions = {
-  origin: ['http://fnpglobal.com', 'https://fnpglobal.com'],
+  origin: ['http://fnpglobal.com', 'https://fnpglobal.com', 'http://localhost:5173'],
   methods: ['POST'],
 };
 
